@@ -1,6 +1,6 @@
 # Smart Ambulance Dispatch System 🚑
 
-A full-stack, intelligent emergency response & ambulance dispatch web platform built for healthcare operations and emergency dispatch management.
+A smart ambulance dispatch system using Python, Flask, SQLite, and intelligent routing algorithms to manage emergency requests, ambulance allocation, hospital selection, and tracking.
 
 The system uses Python, Flask, and SQLite on the backend combined with a responsive, modern HTML/CSS/JavaScript frontend to perform real-time optimal ambulance allocation, traffic-aware travel time (ETA) calculations, and hospital care capacity matching.
 
@@ -56,7 +56,8 @@ graph TD
 Smart Ambulance Dispatch System Project/
 ├── app.py                      # Flask main server application & error handlers
 ├── requirements.txt            # Python dependencies (Flask, werkzeug, etc.)
-├── database.db                 # Main SQLite database file
+├── smart_ambulance_dispatch_dataset (1).csv # Project dataset
+├── hero-illustration.jpg       # Project illustration
 ├── test_system.py              # Automated test suite (UnitTest)
 ├── README.md                   # Project documentation
 ├── models/
@@ -70,9 +71,13 @@ Smart Ambulance Dispatch System Project/
 └── static/
     ├── css/
     │   └── styles.css          # Vanilla CSS design system & responsive layout styles
+    ├── images/
+    │   └── hero-illustration.jpg
     └── js/
         └── script.js           # Frontend client logic, API calls & dynamic rendering
 ```
+
+The SQLite database is generated locally by the application and is intentionally not tracked because it can contain personal or operational data.
 
 ---
 
