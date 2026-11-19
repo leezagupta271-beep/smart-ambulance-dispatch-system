@@ -1,0 +1,501 @@
+record_id,request_id,request_time,emergency_priority,emergency_type,pickup_location,pickup_latitude,pickup_longitude,ambulance_id,ambulance_status_at_assignment,distance_km,estimated_arrival_minutes,hospital_name,hospital_latitude,hospital_longitude,hospital_beds_available,traffic_delay_minutes,booking_status,ambulance_equipment
+1,REQ-1001,2026-09-01 07:50:00,Medium,Severe injury,Bharat Nagar Chowk,30.892596,75.864394,AMB-109,Available,2.2,6,CityCare Hospital,30.912,75.851,1,0,Assigned,"Cardiac, Oxygen"
+2,REQ-1002,2026-09-01 08:15:00,Medium,Severe injury,Ferozepur Road,30.890481,75.83004,AMB-107,Available,3.6,10,DMCH,30.887,75.846,8,0,On the Way,"Trauma, Oxygen"
+3,REQ-1003,2026-09-01 09:55:00,High,Severe injury,Model Town,30.904716,75.830098,AMB-102,Available,5.6,12,Fortis Hospital,30.901,75.842,27,11,Arrived,"Oxygen, Basic Life Support"
+4,REQ-1004,2026-09-01 10:00:00,High,Fever / weakness,Gill Road,30.859364,75.851795,AMB-110,Available,9.0,21,DMCH,30.887,75.846,18,6,Assigned,"Trauma, Advanced Life Support"
+5,REQ-1005,2026-09-01 11:00:00,Medium,Road accident,Sarabha Nagar,30.90766,75.820995,AMB-107,Available,8.3,18,CityCare Hospital,30.912,75.851,26,11,On the Way,Basic Life Support
+6,REQ-1006,2026-09-01 12:25:00,Medium,Road accident,Bharat Nagar Chowk,30.904174,75.847434,AMB-104,Available,4.9,11,Fortis Hospital,30.901,75.842,8,20,On the Way,"Cardiac, Oxygen"
+7,REQ-1007,2026-09-01 13:50:00,Medium,Cardiac emergency,Haibowal,30.925871,75.853963,AMB-106,Available,4.6,8,Civil Hospital Ludhiana,30.92,75.85,6,18,Arrived,Basic Life Support
+8,REQ-1008,2026-09-01 14:15:00,High,Abdominal pain,Bus Stand,30.889286,75.846189,AMB-109,Available,8.2,20,DMCH,30.887,75.846,18,13,Completed,"Advanced Life Support, Oxygen"
+9,REQ-1009,2026-09-01 15:25:00,Low,Abdominal pain,Jagraon Bridge,30.899727,75.836413,AMB-102,Available,3.4,6,DMCH,30.887,75.846,25,13,Assigned,"Trauma, Oxygen"
+10,REQ-1010,2026-09-01 16:30:00,Low,Unconscious patient,Dugri,30.886132,75.846823,AMB-101,Available,5.2,10,Fortis Hospital,30.901,75.842,21,17,Arrived,Basic Life Support
+11,REQ-1011,2026-09-01 17:50:00,High,Breathing difficulty,Bharat Nagar Chowk,30.899512,75.870914,AMB-105,Available,4.7,11,CityCare Hospital,30.912,75.851,16,3,Arrived,"Cardiac, Oxygen"
+12,REQ-1012,2026-09-01 18:50:00,Critical,Chest pain,Ferozepur Road,30.891875,75.825181,AMB-109,Available,6.6,18,DMCH,30.887,75.846,10,15,Assigned,"Trauma, Oxygen"
+13,REQ-1013,2026-09-01 19:05:00,Low,Unconscious patient,Model Town,30.883184,75.827226,AMB-110,Available,11.2,24,Fortis Hospital,30.901,75.842,23,15,Assigned,"Oxygen, Basic Life Support"
+14,REQ-1014,2026-09-01 20:40:00,Critical,Abdominal pain,Gill Road,30.885405,75.847954,AMB-109,Available,9.4,23,DMCH,30.887,75.846,30,6,On the Way,"Trauma, Advanced Life Support"
+15,REQ-1015,2026-09-01 07:55:00,Low,Chest pain,Sarabha Nagar,30.895143,75.810527,AMB-102,Available,4.4,7,CityCare Hospital,30.912,75.851,10,0,On the Way,Basic Life Support
+16,REQ-1016,2026-09-01 08:45:00,Critical,Cardiac emergency,Bharat Nagar Chowk,30.892768,75.869463,AMB-106,Available,3.4,6,Fortis Hospital,30.901,75.842,8,15,On the Way,"Cardiac, Oxygen"
+17,REQ-1017,2026-09-01 09:40:00,Low,Abdominal pain,Haibowal,30.92629,75.867189,AMB-107,Available,2.5,4,Civil Hospital Ludhiana,30.92,75.85,21,13,Arrived,Basic Life Support
+18,REQ-1018,2026-09-01 10:30:00,Low,Cardiac emergency,Bus Stand,30.905201,75.871525,AMB-102,Available,5.5,13,DMCH,30.887,75.846,10,3,On the Way,"Advanced Life Support, Oxygen"
+19,REQ-1019,2026-09-01 11:15:00,High,Fever / weakness,Jagraon Bridge,30.902505,75.848879,AMB-102,Available,3.1,9,DMCH,30.887,75.846,3,1,Assigned,"Trauma, Oxygen"
+20,REQ-1020,2026-09-01 12:05:00,Medium,Breathing difficulty,Dugri,30.869192,75.835441,AMB-107,Available,11.2,25,Fortis Hospital,30.901,75.842,12,0,Completed,Basic Life Support
+21,REQ-1021,2026-09-02 13:20:00,Medium,Unconscious patient,Bharat Nagar Chowk,30.89859,75.87102,AMB-109,Available,11.2,25,CityCare Hospital,30.912,75.851,4,6,Arrived,"Cardiac, Oxygen"
+22,REQ-1022,2026-09-02 14:15:00,Medium,Cardiac emergency,Ferozepur Road,30.891439,75.810715,AMB-110,Available,11.7,25,DMCH,30.887,75.846,5,1,Assigned,"Trauma, Oxygen"
+23,REQ-1023,2026-09-02 15:10:00,Critical,Severe injury,Model Town,30.888113,75.848248,AMB-110,Available,1.8,7,Fortis Hospital,30.901,75.842,1,19,Assigned,"Oxygen, Basic Life Support"
+24,REQ-1024,2026-09-02 16:30:00,Medium,Chest pain,Gill Road,30.885041,75.849128,AMB-106,Available,8.2,16,DMCH,30.887,75.846,4,20,Arrived,"Trauma, Advanced Life Support"
+25,REQ-1025,2026-09-02 17:35:00,Medium,Road accident,Sarabha Nagar,30.882279,75.813635,AMB-110,Available,4.5,10,CityCare Hospital,30.912,75.851,17,6,Arrived,Basic Life Support
+26,REQ-1026,2026-09-02 18:10:00,Low,Severe injury,Bharat Nagar Chowk,30.896986,75.847032,AMB-109,Available,11.3,26,Fortis Hospital,30.901,75.842,25,20,Assigned,"Cardiac, Oxygen"
+27,REQ-1027,2026-09-02 19:50:00,High,Road accident,Haibowal,30.947168,75.857029,AMB-102,Available,10.0,26,Civil Hospital Ludhiana,30.92,75.85,17,4,Arrived,Basic Life Support
+28,REQ-1028,2026-09-02 20:20:00,Medium,Severe injury,Bus Stand,30.905625,75.867587,AMB-109,Available,7.7,14,DMCH,30.887,75.846,2,20,Completed,"Advanced Life Support, Oxygen"
+29,REQ-1029,2026-09-02 07:20:00,High,Breathing difficulty,Jagraon Bridge,30.916113,75.842859,AMB-108,Available,1.5,6,DMCH,30.887,75.846,17,0,Assigned,"Trauma, Oxygen"
+30,REQ-1030,2026-09-02 08:05:00,Medium,Breathing difficulty,Dugri,30.873368,75.846038,AMB-110,Available,11.4,24,Fortis Hospital,30.901,75.842,4,1,Arrived,Basic Life Support
+31,REQ-1031,2026-09-02 09:25:00,Medium,Cardiac emergency,Bharat Nagar Chowk,30.912868,75.848602,AMB-104,Available,10.9,23,CityCare Hospital,30.912,75.851,24,17,Completed,"Cardiac, Oxygen"
+32,REQ-1032,2026-09-02 10:45:00,Low,Severe injury,Ferozepur Road,30.894938,75.838286,AMB-103,Available,9.2,19,DMCH,30.887,75.846,5,10,Completed,"Trauma, Oxygen"
+33,REQ-1033,2026-09-02 11:50:00,Medium,Unconscious patient,Model Town,30.880776,75.841038,AMB-107,Available,10.5,25,Fortis Hospital,30.901,75.842,7,6,Completed,"Oxygen, Basic Life Support"
+34,REQ-1034,2026-09-02 12:25:00,Medium,Severe injury,Gill Road,30.863688,75.862801,AMB-107,Available,4.4,7,DMCH,30.887,75.846,30,8,Arrived,"Trauma, Advanced Life Support"
+35,REQ-1035,2026-09-02 13:50:00,Medium,Chest pain,Sarabha Nagar,30.910177,75.79846,AMB-105,Available,6.6,12,CityCare Hospital,30.912,75.851,1,3,Completed,Basic Life Support
+36,REQ-1036,2026-09-02 14:25:00,High,Road accident,Bharat Nagar Chowk,30.897456,75.859598,AMB-105,Available,9.0,16,Fortis Hospital,30.901,75.842,0,16,On the Way,"Cardiac, Oxygen"
+37,REQ-1037,2026-09-02 15:25:00,Low,Chest pain,Haibowal,30.937695,75.872902,AMB-102,Available,5.7,13,Civil Hospital Ludhiana,30.92,75.85,16,9,Completed,Basic Life Support
+38,REQ-1038,2026-09-02 16:25:00,High,Breathing difficulty,Bus Stand,30.890755,75.861948,AMB-107,Available,5.4,11,DMCH,30.887,75.846,19,18,Arrived,"Advanced Life Support, Oxygen"
+39,REQ-1039,2026-09-02 17:30:00,Critical,Unconscious patient,Jagraon Bridge,30.903305,75.858573,AMB-110,Available,7.0,16,DMCH,30.887,75.846,14,14,On the Way,"Trauma, Oxygen"
+40,REQ-1040,2026-09-02 18:40:00,Low,Breathing difficulty,Dugri,30.876766,75.829514,AMB-110,Available,6.2,11,Fortis Hospital,30.901,75.842,21,9,On the Way,Basic Life Support
+41,REQ-1041,2026-09-03 19:15:00,Critical,Abdominal pain,Bharat Nagar Chowk,30.904238,75.865355,AMB-108,Available,2.6,10,CityCare Hospital,30.912,75.851,18,6,Completed,"Cardiac, Oxygen"
+42,REQ-1042,2026-09-03 20:35:00,Critical,Cardiac emergency,Ferozepur Road,30.89578,75.834813,AMB-102,Available,5.4,12,DMCH,30.887,75.846,5,16,Completed,"Trauma, Oxygen"
+43,REQ-1043,2026-09-03 07:00:00,Low,Road accident,Model Town,30.889694,75.844042,AMB-109,Available,7.1,20,Fortis Hospital,30.901,75.842,10,14,Completed,"Oxygen, Basic Life Support"
+44,REQ-1044,2026-09-03 08:40:00,Critical,Abdominal pain,Gill Road,30.870502,75.865553,AMB-105,Available,5.9,16,DMCH,30.887,75.846,15,20,On the Way,"Trauma, Advanced Life Support"
+45,REQ-1045,2026-09-03 09:20:00,Medium,Severe injury,Sarabha Nagar,30.890151,75.804591,AMB-109,Available,5.8,9,CityCare Hospital,30.912,75.851,7,12,On the Way,Basic Life Support
+46,REQ-1046,2026-09-03 10:55:00,High,Chest pain,Bharat Nagar Chowk,30.902178,75.854773,AMB-104,Available,3.4,10,Fortis Hospital,30.901,75.842,28,18,Assigned,"Cardiac, Oxygen"
+47,REQ-1047,2026-09-03 11:45:00,Critical,Chest pain,Haibowal,30.927958,75.8647,AMB-107,Available,5.2,15,Civil Hospital Ludhiana,30.92,75.85,17,19,On the Way,Basic Life Support
+48,REQ-1048,2026-09-03 12:35:00,High,Cardiac emergency,Bus Stand,30.896666,75.862066,AMB-107,Available,3.4,10,DMCH,30.887,75.846,29,4,Assigned,"Advanced Life Support, Oxygen"
+49,REQ-1049,2026-09-03 13:30:00,Medium,Road accident,Jagraon Bridge,30.916282,75.839071,AMB-108,Available,7.5,14,DMCH,30.887,75.846,12,10,On the Way,"Trauma, Oxygen"
+50,REQ-1050,2026-09-03 14:35:00,Medium,Fever / weakness,Dugri,30.865348,75.849536,AMB-107,Available,4.6,7,Fortis Hospital,30.901,75.842,15,0,Assigned,Basic Life Support
+51,REQ-1051,2026-09-03 15:25:00,Critical,Cardiac emergency,Bharat Nagar Chowk,30.908527,75.870788,AMB-104,Available,3.5,11,CityCare Hospital,30.912,75.851,4,7,On the Way,"Cardiac, Oxygen"
+52,REQ-1052,2026-09-03 16:35:00,Medium,Severe injury,Ferozepur Road,30.882951,75.816687,AMB-106,Available,8.4,17,DMCH,30.887,75.846,30,3,On the Way,"Trauma, Oxygen"
+53,REQ-1053,2026-09-03 17:20:00,Critical,Unconscious patient,Model Town,30.893274,75.847241,AMB-107,Available,2.2,9,Fortis Hospital,30.901,75.842,6,2,On the Way,"Oxygen, Basic Life Support"
+54,REQ-1054,2026-09-03 18:05:00,High,Road accident,Gill Road,30.880887,75.859978,AMB-101,Available,8.7,18,DMCH,30.887,75.846,21,11,Assigned,"Trauma, Advanced Life Support"
+55,REQ-1055,2026-09-03 19:40:00,Critical,Fever / weakness,Sarabha Nagar,30.90667,75.798166,AMB-106,Available,8.1,18,CityCare Hospital,30.912,75.851,22,4,Completed,Basic Life Support
+56,REQ-1056,2026-09-03 20:10:00,Low,Unconscious patient,Bharat Nagar Chowk,30.904377,75.869889,AMB-108,Available,9.1,21,Fortis Hospital,30.901,75.842,18,8,Arrived,"Cardiac, Oxygen"
+57,REQ-1057,2026-09-03 07:15:00,Critical,Abdominal pain,Haibowal,30.926316,75.866941,AMB-110,Available,10.1,22,Civil Hospital Ludhiana,30.92,75.85,0,15,Arrived,Basic Life Support
+58,REQ-1058,2026-09-03 08:10:00,High,Unconscious patient,Bus Stand,30.89521,75.86841,AMB-105,Available,6.4,16,DMCH,30.887,75.846,30,6,Assigned,"Advanced Life Support, Oxygen"
+59,REQ-1059,2026-09-03 09:15:00,High,Severe injury,Jagraon Bridge,30.917718,75.854377,AMB-108,Available,8.9,16,DMCH,30.887,75.846,2,9,On the Way,"Trauma, Oxygen"
+60,REQ-1060,2026-09-03 10:30:00,High,Chest pain,Dugri,30.871198,75.836928,AMB-107,Available,8.6,23,Fortis Hospital,30.901,75.842,10,11,Completed,Basic Life Support
+61,REQ-1061,2026-09-04 11:20:00,High,Severe injury,Bharat Nagar Chowk,30.895366,75.864586,AMB-103,Available,4.4,12,CityCare Hospital,30.912,75.851,15,8,Arrived,"Cardiac, Oxygen"
+62,REQ-1062,2026-09-04 12:05:00,High,Chest pain,Ferozepur Road,30.874383,75.809424,AMB-109,Available,10.2,15,DMCH,30.887,75.846,1,17,Arrived,"Trauma, Oxygen"
+63,REQ-1063,2026-09-04 13:55:00,Medium,Abdominal pain,Model Town,30.879078,75.820368,AMB-105,Available,11.4,23,Fortis Hospital,30.901,75.842,10,5,Assigned,"Oxygen, Basic Life Support"
+64,REQ-1064,2026-09-04 14:20:00,High,Road accident,Gill Road,30.869021,75.845222,AMB-101,Available,11.4,21,DMCH,30.887,75.846,30,9,Assigned,"Trauma, Advanced Life Support"
+65,REQ-1065,2026-09-04 15:15:00,Medium,Severe injury,Sarabha Nagar,30.905271,75.806411,AMB-108,Available,2.3,8,CityCare Hospital,30.912,75.851,13,9,Assigned,Basic Life Support
+66,REQ-1066,2026-09-04 16:45:00,Critical,Severe injury,Bharat Nagar Chowk,30.904665,75.850239,AMB-102,Available,11.6,19,Fortis Hospital,30.901,75.842,17,2,On the Way,"Cardiac, Oxygen"
+67,REQ-1067,2026-09-04 17:00:00,Medium,Abdominal pain,Haibowal,30.927738,75.859944,AMB-105,Available,5.5,14,Civil Hospital Ludhiana,30.92,75.85,2,7,Arrived,Basic Life Support
+68,REQ-1068,2026-09-04 18:50:00,Medium,Severe injury,Bus Stand,30.897754,75.858337,AMB-103,Available,7.5,17,DMCH,30.887,75.846,2,1,On the Way,"Advanced Life Support, Oxygen"
+69,REQ-1069,2026-09-04 19:20:00,Medium,Unconscious patient,Jagraon Bridge,30.910175,75.849061,AMB-105,Available,7.5,17,DMCH,30.887,75.846,16,17,Completed,"Trauma, Oxygen"
+70,REQ-1070,2026-09-04 20:35:00,Critical,Fever / weakness,Dugri,30.879036,75.839111,AMB-101,Available,1.9,8,Fortis Hospital,30.901,75.842,26,18,Assigned,Basic Life Support
+71,REQ-1071,2026-09-04 07:50:00,Medium,Breathing difficulty,Bharat Nagar Chowk,30.900015,75.861845,AMB-105,Available,10.0,19,CityCare Hospital,30.912,75.851,13,20,Completed,"Cardiac, Oxygen"
+72,REQ-1072,2026-09-04 08:05:00,High,Chest pain,Ferozepur Road,30.889104,75.834732,AMB-106,Available,6.2,14,DMCH,30.887,75.846,9,12,Assigned,"Trauma, Oxygen"
+73,REQ-1073,2026-09-04 09:35:00,High,Road accident,Model Town,30.905106,75.832125,AMB-109,Available,2.0,4,Fortis Hospital,30.901,75.842,21,17,Completed,"Oxygen, Basic Life Support"
+74,REQ-1074,2026-09-04 10:30:00,High,Abdominal pain,Gill Road,30.875762,75.8658,AMB-104,Available,1.6,4,DMCH,30.887,75.846,29,9,Completed,"Trauma, Advanced Life Support"
+75,REQ-1075,2026-09-04 11:55:00,Critical,Severe injury,Sarabha Nagar,30.903293,75.804323,AMB-101,Available,6.3,12,CityCare Hospital,30.912,75.851,7,3,Completed,Basic Life Support
+76,REQ-1076,2026-09-04 12:05:00,Critical,Unconscious patient,Bharat Nagar Chowk,30.901166,75.850503,AMB-108,Available,8.1,19,Fortis Hospital,30.901,75.842,14,17,On the Way,"Cardiac, Oxygen"
+77,REQ-1077,2026-09-04 13:30:00,Medium,Breathing difficulty,Haibowal,30.944921,75.861287,AMB-107,Available,3.1,9,Civil Hospital Ludhiana,30.92,75.85,8,0,Arrived,Basic Life Support
+78,REQ-1078,2026-09-04 14:55:00,Medium,Abdominal pain,Bus Stand,30.910958,75.855396,AMB-108,Available,4.3,11,DMCH,30.887,75.846,24,17,Completed,"Advanced Life Support, Oxygen"
+79,REQ-1079,2026-09-04 15:35:00,Low,Severe injury,Jagraon Bridge,30.914154,75.842007,AMB-107,Available,11.3,21,DMCH,30.887,75.846,15,12,Completed,"Trauma, Oxygen"
+80,REQ-1080,2026-09-04 16:50:00,Medium,Breathing difficulty,Dugri,30.87186,75.822111,AMB-109,Available,9.7,23,Fortis Hospital,30.901,75.842,27,3,Completed,Basic Life Support
+81,REQ-1081,2026-09-05 17:05:00,High,Breathing difficulty,Bharat Nagar Chowk,30.898199,75.861943,AMB-103,Available,6.8,12,CityCare Hospital,30.912,75.851,10,19,Completed,"Cardiac, Oxygen"
+82,REQ-1082,2026-09-05 18:50:00,High,Fever / weakness,Ferozepur Road,30.897624,75.827804,AMB-108,Available,1.9,4,DMCH,30.887,75.846,19,2,On the Way,"Trauma, Oxygen"
+83,REQ-1083,2026-09-05 19:50:00,High,Severe injury,Model Town,30.898403,75.833019,AMB-102,Available,8.5,22,Fortis Hospital,30.901,75.842,27,3,Completed,"Oxygen, Basic Life Support"
+84,REQ-1084,2026-09-05 20:10:00,Low,Cardiac emergency,Gill Road,30.866731,75.844684,AMB-106,Available,8.6,16,DMCH,30.887,75.846,7,16,Completed,"Trauma, Advanced Life Support"
+85,REQ-1085,2026-09-05 07:45:00,Critical,Breathing difficulty,Sarabha Nagar,30.884369,75.821125,AMB-110,Available,8.5,20,CityCare Hospital,30.912,75.851,29,18,On the Way,Basic Life Support
+86,REQ-1086,2026-09-05 08:15:00,High,Unconscious patient,Bharat Nagar Chowk,30.905905,75.869267,AMB-108,Available,6.1,18,Fortis Hospital,30.901,75.842,17,5,Assigned,"Cardiac, Oxygen"
+87,REQ-1087,2026-09-05 09:35:00,Low,Unconscious patient,Haibowal,30.938168,75.865729,AMB-105,Available,11.4,22,Civil Hospital Ludhiana,30.92,75.85,6,12,Completed,Basic Life Support
+88,REQ-1088,2026-09-05 10:05:00,Medium,Unconscious patient,Bus Stand,30.914781,75.850857,AMB-107,Available,3.6,10,DMCH,30.887,75.846,27,1,Completed,"Advanced Life Support, Oxygen"
+89,REQ-1089,2026-09-05 11:20:00,High,Chest pain,Jagraon Bridge,30.90357,75.840704,AMB-105,Available,9.5,23,DMCH,30.887,75.846,24,4,Assigned,"Trauma, Oxygen"
+90,REQ-1090,2026-09-05 12:50:00,High,Abdominal pain,Dugri,30.858001,75.831946,AMB-103,Available,8.1,14,Fortis Hospital,30.901,75.842,10,13,On the Way,Basic Life Support
+91,REQ-1091,2026-09-05 13:15:00,High,Chest pain,Bharat Nagar Chowk,30.901826,75.869705,AMB-103,Available,2.5,7,CityCare Hospital,30.912,75.851,30,9,Arrived,"Cardiac, Oxygen"
+92,REQ-1092,2026-09-05 14:05:00,Critical,Severe injury,Ferozepur Road,30.894804,75.830727,AMB-107,Available,6.2,17,DMCH,30.887,75.846,11,2,Completed,"Trauma, Oxygen"
+93,REQ-1093,2026-09-05 15:00:00,Critical,Chest pain,Model Town,30.896185,75.84017,AMB-110,Available,3.9,12,Fortis Hospital,30.901,75.842,30,11,Assigned,"Oxygen, Basic Life Support"
+94,REQ-1094,2026-09-05 16:50:00,Critical,Chest pain,Gill Road,30.884458,75.849641,AMB-102,Available,3.6,10,DMCH,30.887,75.846,29,9,Completed,"Trauma, Advanced Life Support"
+95,REQ-1095,2026-09-05 17:05:00,Low,Unconscious patient,Sarabha Nagar,30.911878,75.798484,AMB-104,Available,2.5,6,CityCare Hospital,30.912,75.851,12,14,Arrived,Basic Life Support
+96,REQ-1096,2026-09-05 18:50:00,Medium,Fever / weakness,Bharat Nagar Chowk,30.90352,75.864098,AMB-107,Available,11.4,25,Fortis Hospital,30.901,75.842,19,13,Arrived,"Cardiac, Oxygen"
+97,REQ-1097,2026-09-05 19:00:00,High,Abdominal pain,Haibowal,30.947517,75.878664,AMB-102,Available,8.6,21,Civil Hospital Ludhiana,30.92,75.85,17,20,Arrived,Basic Life Support
+98,REQ-1098,2026-09-05 20:00:00,Critical,Road accident,Bus Stand,30.91347,75.866726,AMB-102,Available,5.4,15,DMCH,30.887,75.846,20,19,Assigned,"Advanced Life Support, Oxygen"
+99,REQ-1099,2026-09-05 07:00:00,High,Breathing difficulty,Jagraon Bridge,30.920609,75.841156,AMB-109,Available,9.7,16,DMCH,30.887,75.846,26,7,Arrived,"Trauma, Oxygen"
+100,REQ-1100,2026-09-05 08:10:00,Medium,Unconscious patient,Dugri,30.882752,75.825341,AMB-103,Available,9.7,19,Fortis Hospital,30.901,75.842,3,0,On the Way,Basic Life Support
+101,REQ-1101,2026-09-06 09:00:00,Medium,Chest pain,Bharat Nagar Chowk,30.886373,75.850261,AMB-103,Available,4.9,14,CityCare Hospital,30.912,75.851,3,2,Completed,"Cardiac, Oxygen"
+102,REQ-1102,2026-09-06 10:35:00,High,Road accident,Ferozepur Road,30.88256,75.815646,AMB-110,Available,9.6,19,DMCH,30.887,75.846,16,9,Completed,"Trauma, Oxygen"
+103,REQ-1103,2026-09-06 11:50:00,Critical,Abdominal pain,Model Town,30.901419,75.832788,AMB-102,Available,11.6,24,Fortis Hospital,30.901,75.842,2,2,Arrived,"Oxygen, Basic Life Support"
+104,REQ-1104,2026-09-06 12:45:00,Critical,Chest pain,Gill Road,30.868427,75.860922,AMB-105,Available,2.6,9,DMCH,30.887,75.846,13,3,Assigned,"Trauma, Advanced Life Support"
+105,REQ-1105,2026-09-06 13:50:00,Medium,Severe injury,Sarabha Nagar,30.894902,75.821643,AMB-107,Available,8.2,17,CityCare Hospital,30.912,75.851,12,13,Assigned,Basic Life Support
+106,REQ-1106,2026-09-06 14:25:00,Medium,Chest pain,Bharat Nagar Chowk,30.914508,75.862905,AMB-108,Available,5.7,8,Fortis Hospital,30.901,75.842,2,13,Assigned,"Cardiac, Oxygen"
+107,REQ-1107,2026-09-06 15:55:00,Medium,Cardiac emergency,Haibowal,30.936594,75.869848,AMB-106,Available,9.1,21,Civil Hospital Ludhiana,30.92,75.85,11,13,Assigned,Basic Life Support
+108,REQ-1108,2026-09-06 16:20:00,High,Severe injury,Bus Stand,30.889642,75.856466,AMB-102,Available,7.6,17,DMCH,30.887,75.846,11,3,Arrived,"Advanced Life Support, Oxygen"
+109,REQ-1109,2026-09-06 17:45:00,High,Cardiac emergency,Jagraon Bridge,30.91527,75.854735,AMB-105,Available,3.5,7,DMCH,30.887,75.846,22,9,Arrived,"Trauma, Oxygen"
+110,REQ-1110,2026-09-06 18:25:00,Low,Fever / weakness,Dugri,30.859088,75.843229,AMB-101,Available,1.1,6,Fortis Hospital,30.901,75.842,6,12,Completed,Basic Life Support
+111,REQ-1111,2026-09-06 19:35:00,High,Chest pain,Bharat Nagar Chowk,30.909205,75.859328,AMB-102,Available,4.7,11,CityCare Hospital,30.912,75.851,5,19,Assigned,"Cardiac, Oxygen"
+112,REQ-1112,2026-09-06 20:50:00,High,Fever / weakness,Ferozepur Road,30.88357,75.822261,AMB-105,Available,1.9,7,DMCH,30.887,75.846,3,11,Completed,"Trauma, Oxygen"
+113,REQ-1113,2026-09-06 07:05:00,Medium,Abdominal pain,Model Town,30.891808,75.829253,AMB-104,Available,4.1,11,Fortis Hospital,30.901,75.842,1,0,On the Way,"Oxygen, Basic Life Support"
+114,REQ-1114,2026-09-06 08:20:00,Medium,Unconscious patient,Gill Road,30.865683,75.8466,AMB-108,Available,11.4,24,DMCH,30.887,75.846,4,12,On the Way,"Trauma, Advanced Life Support"
+115,REQ-1115,2026-09-06 09:40:00,Medium,Chest pain,Sarabha Nagar,30.884162,75.820853,AMB-101,Available,7.1,15,CityCare Hospital,30.912,75.851,29,2,Arrived,Basic Life Support
+116,REQ-1116,2026-09-06 10:45:00,High,Fever / weakness,Bharat Nagar Chowk,30.894585,75.854451,AMB-106,Available,5.7,13,Fortis Hospital,30.901,75.842,14,11,Assigned,"Cardiac, Oxygen"
+117,REQ-1117,2026-09-06 11:30:00,High,Fever / weakness,Haibowal,30.934719,75.864873,AMB-105,Available,10.3,22,Civil Hospital Ludhiana,30.92,75.85,10,5,Assigned,Basic Life Support
+118,REQ-1118,2026-09-06 12:40:00,High,Severe injury,Bus Stand,30.912178,75.852481,AMB-103,Available,8.0,14,DMCH,30.887,75.846,8,6,On the Way,"Advanced Life Support, Oxygen"
+119,REQ-1119,2026-09-06 13:45:00,Medium,Road accident,Jagraon Bridge,30.902314,75.858185,AMB-108,Available,2.7,9,DMCH,30.887,75.846,24,18,Completed,"Trauma, Oxygen"
+120,REQ-1120,2026-09-06 14:50:00,Medium,Chest pain,Dugri,30.882927,75.839817,AMB-103,Available,11.2,23,Fortis Hospital,30.901,75.842,14,20,Arrived,Basic Life Support
+121,REQ-1121,2026-09-07 15:20:00,High,Road accident,Bharat Nagar Chowk,30.895212,75.855857,AMB-101,Available,7.5,15,CityCare Hospital,30.912,75.851,2,20,Assigned,"Cardiac, Oxygen"
+122,REQ-1122,2026-09-07 16:45:00,High,Cardiac emergency,Ferozepur Road,30.882492,75.833294,AMB-104,Available,7.5,15,DMCH,30.887,75.846,16,4,Assigned,"Trauma, Oxygen"
+123,REQ-1123,2026-09-07 17:35:00,Low,Chest pain,Model Town,30.905472,75.82253,AMB-103,Available,2.1,8,Fortis Hospital,30.901,75.842,14,14,On the Way,"Oxygen, Basic Life Support"
+124,REQ-1124,2026-09-07 18:25:00,High,Fever / weakness,Gill Road,30.880234,75.863367,AMB-101,Available,5.1,15,DMCH,30.887,75.846,10,2,Arrived,"Trauma, Advanced Life Support"
+125,REQ-1125,2026-09-07 19:05:00,High,Unconscious patient,Sarabha Nagar,30.903712,75.814697,AMB-110,Available,7.1,17,CityCare Hospital,30.912,75.851,2,18,On the Way,Basic Life Support
+126,REQ-1126,2026-09-07 20:25:00,Medium,Fever / weakness,Bharat Nagar Chowk,30.889769,75.863565,AMB-102,Available,4.4,10,Fortis Hospital,30.901,75.842,20,10,On the Way,"Cardiac, Oxygen"
+127,REQ-1127,2026-09-07 07:50:00,Low,Road accident,Haibowal,30.938381,75.865702,AMB-106,Available,8.7,14,Civil Hospital Ludhiana,30.92,75.85,5,6,Arrived,Basic Life Support
+128,REQ-1128,2026-09-07 08:35:00,Low,Breathing difficulty,Bus Stand,30.887315,75.867333,AMB-102,Available,3.1,10,DMCH,30.887,75.846,26,16,Assigned,"Advanced Life Support, Oxygen"
+129,REQ-1129,2026-09-07 09:50:00,Medium,Breathing difficulty,Jagraon Bridge,30.914917,75.839628,AMB-103,Available,4.7,14,DMCH,30.887,75.846,25,5,Completed,"Trauma, Oxygen"
+130,REQ-1130,2026-09-07 10:00:00,Medium,Severe injury,Dugri,30.886088,75.839318,AMB-108,Available,5.5,10,Fortis Hospital,30.901,75.842,9,15,On the Way,Basic Life Support
+131,REQ-1131,2026-09-07 11:25:00,Medium,Abdominal pain,Bharat Nagar Chowk,30.89975,75.850753,AMB-107,Available,8.5,18,CityCare Hospital,30.912,75.851,30,5,On the Way,"Cardiac, Oxygen"
+132,REQ-1132,2026-09-07 12:45:00,High,Abdominal pain,Ferozepur Road,30.895224,75.825636,AMB-102,Available,2.5,9,DMCH,30.887,75.846,27,3,Arrived,"Trauma, Oxygen"
+133,REQ-1133,2026-09-07 13:05:00,High,Breathing difficulty,Model Town,30.900931,75.822751,AMB-104,Available,9.4,21,Fortis Hospital,30.901,75.842,29,0,Completed,"Oxygen, Basic Life Support"
+134,REQ-1134,2026-09-07 14:00:00,High,Fever / weakness,Gill Road,30.886836,75.854247,AMB-101,Available,5.4,9,DMCH,30.887,75.846,26,20,Arrived,"Trauma, Advanced Life Support"
+135,REQ-1135,2026-09-07 15:10:00,High,Abdominal pain,Sarabha Nagar,30.902882,75.799164,AMB-108,Available,2.5,4,CityCare Hospital,30.912,75.851,28,2,Assigned,Basic Life Support
+136,REQ-1136,2026-09-07 16:20:00,Critical,Fever / weakness,Bharat Nagar Chowk,30.889236,75.850943,AMB-105,Available,3.4,6,Fortis Hospital,30.901,75.842,13,20,Completed,"Cardiac, Oxygen"
+137,REQ-1137,2026-09-07 17:05:00,Low,Cardiac emergency,Haibowal,30.937959,75.870251,AMB-103,Available,2.2,4,Civil Hospital Ludhiana,30.92,75.85,19,11,On the Way,Basic Life Support
+138,REQ-1138,2026-09-07 18:45:00,Medium,Road accident,Bus Stand,30.900705,75.852818,AMB-109,Available,5.6,14,DMCH,30.887,75.846,17,0,Completed,"Advanced Life Support, Oxygen"
+139,REQ-1139,2026-09-07 19:35:00,High,Chest pain,Jagraon Bridge,30.90461,75.835487,AMB-102,Available,1.5,8,DMCH,30.887,75.846,21,20,Assigned,"Trauma, Oxygen"
+140,REQ-1140,2026-09-07 20:45:00,High,Cardiac emergency,Dugri,30.867569,75.831156,AMB-103,Available,9.1,24,Fortis Hospital,30.901,75.842,14,15,On the Way,Basic Life Support
+141,REQ-1141,2026-09-08 07:10:00,Medium,Abdominal pain,Bharat Nagar Chowk,30.88701,75.848348,AMB-104,Available,1.7,6,CityCare Hospital,30.912,75.851,29,9,Completed,"Cardiac, Oxygen"
+142,REQ-1142,2026-09-08 08:40:00,Critical,Severe injury,Ferozepur Road,30.877583,75.834864,AMB-101,Available,6.2,15,DMCH,30.887,75.846,8,3,Arrived,"Trauma, Oxygen"
+143,REQ-1143,2026-09-08 09:30:00,Medium,Fever / weakness,Model Town,30.886171,75.825605,AMB-108,Available,10.8,22,Fortis Hospital,30.901,75.842,8,2,Completed,"Oxygen, Basic Life Support"
+144,REQ-1144,2026-09-08 10:05:00,Low,Breathing difficulty,Gill Road,30.873364,75.852636,AMB-102,Available,5.7,11,DMCH,30.887,75.846,9,14,Completed,"Trauma, Advanced Life Support"
+145,REQ-1145,2026-09-08 11:10:00,High,Cardiac emergency,Sarabha Nagar,30.903804,75.822348,AMB-110,Available,8.6,21,CityCare Hospital,30.912,75.851,20,1,Assigned,Basic Life Support
+146,REQ-1146,2026-09-08 12:50:00,High,Breathing difficulty,Bharat Nagar Chowk,30.914484,75.846583,AMB-110,Available,8.0,19,Fortis Hospital,30.901,75.842,1,4,Assigned,"Cardiac, Oxygen"
+147,REQ-1147,2026-09-08 13:15:00,High,Fever / weakness,Haibowal,30.947484,75.853972,AMB-103,Available,9.6,21,Civil Hospital Ludhiana,30.92,75.85,11,14,Assigned,Basic Life Support
+148,REQ-1148,2026-09-08 14:45:00,High,Chest pain,Bus Stand,30.904487,75.849488,AMB-102,Available,2.5,5,DMCH,30.887,75.846,15,16,Completed,"Advanced Life Support, Oxygen"
+149,REQ-1149,2026-09-08 15:40:00,Medium,Abdominal pain,Jagraon Bridge,30.903437,75.853356,AMB-108,Available,2.3,5,DMCH,30.887,75.846,27,2,Completed,"Trauma, Oxygen"
+150,REQ-1150,2026-09-08 16:10:00,High,Road accident,Dugri,30.881315,75.850027,AMB-106,Available,10.9,26,Fortis Hospital,30.901,75.842,2,17,Arrived,Basic Life Support
+151,REQ-1151,2026-09-08 17:20:00,Medium,Breathing difficulty,Bharat Nagar Chowk,30.909711,75.857563,AMB-102,Available,10.4,24,CityCare Hospital,30.912,75.851,7,15,Assigned,"Cardiac, Oxygen"
+152,REQ-1152,2026-09-08 18:25:00,High,Breathing difficulty,Ferozepur Road,30.887358,75.811586,AMB-105,Available,7.1,17,DMCH,30.887,75.846,23,15,Completed,"Trauma, Oxygen"
+153,REQ-1153,2026-09-08 19:30:00,Critical,Chest pain,Model Town,30.89527,75.833499,AMB-109,Available,10.1,21,Fortis Hospital,30.901,75.842,20,18,On the Way,"Oxygen, Basic Life Support"
+154,REQ-1154,2026-09-08 20:10:00,Low,Cardiac emergency,Gill Road,30.881942,75.858543,AMB-105,Available,5.8,11,DMCH,30.887,75.846,29,7,Arrived,"Trauma, Advanced Life Support"
+155,REQ-1155,2026-09-08 07:40:00,Medium,Unconscious patient,Sarabha Nagar,30.887889,75.823691,AMB-105,Available,10.8,18,CityCare Hospital,30.912,75.851,19,17,Assigned,Basic Life Support
+156,REQ-1156,2026-09-08 08:40:00,Medium,Breathing difficulty,Bharat Nagar Chowk,30.891036,75.861034,AMB-110,Available,8.1,18,Fortis Hospital,30.901,75.842,1,0,Assigned,"Cardiac, Oxygen"
+157,REQ-1157,2026-09-08 09:00:00,Medium,Unconscious patient,Haibowal,30.938534,75.876009,AMB-107,Available,11.4,22,Civil Hospital Ludhiana,30.92,75.85,15,20,Arrived,Basic Life Support
+158,REQ-1158,2026-09-08 10:50:00,High,Fever / weakness,Bus Stand,30.893923,75.844189,AMB-101,Available,11.5,21,DMCH,30.887,75.846,15,14,On the Way,"Advanced Life Support, Oxygen"
+159,REQ-1159,2026-09-08 11:25:00,High,Chest pain,Jagraon Bridge,30.919026,75.860823,AMB-107,Available,7.7,14,DMCH,30.887,75.846,16,17,Assigned,"Trauma, Oxygen"
+160,REQ-1160,2026-09-08 12:25:00,Critical,Abdominal pain,Dugri,30.864438,75.823904,AMB-105,Available,3.7,12,Fortis Hospital,30.901,75.842,13,7,On the Way,Basic Life Support
+161,REQ-1161,2026-09-09 13:25:00,Medium,Severe injury,Bharat Nagar Chowk,30.908794,75.857248,AMB-109,Available,11.3,22,CityCare Hospital,30.912,75.851,15,0,Assigned,"Cardiac, Oxygen"
+162,REQ-1162,2026-09-09 14:30:00,Low,Severe injury,Ferozepur Road,30.8865,75.81046,AMB-105,Available,6.6,17,DMCH,30.887,75.846,21,15,Arrived,"Trauma, Oxygen"
+163,REQ-1163,2026-09-09 15:40:00,Critical,Breathing difficulty,Model Town,30.902474,75.841825,AMB-107,Available,1.1,5,Fortis Hospital,30.901,75.842,1,18,On the Way,"Oxygen, Basic Life Support"
+164,REQ-1164,2026-09-09 16:25:00,Critical,Abdominal pain,Gill Road,30.879932,75.851392,AMB-110,Available,7.1,14,DMCH,30.887,75.846,4,3,Completed,"Trauma, Advanced Life Support"
+165,REQ-1165,2026-09-09 17:25:00,High,Chest pain,Sarabha Nagar,30.904649,75.800972,AMB-109,Available,9.7,17,CityCare Hospital,30.912,75.851,1,1,On the Way,Basic Life Support
+166,REQ-1166,2026-09-09 18:55:00,High,Abdominal pain,Bharat Nagar Chowk,30.890368,75.869094,AMB-103,Available,4.7,12,Fortis Hospital,30.901,75.842,10,5,Completed,"Cardiac, Oxygen"
+167,REQ-1167,2026-09-09 19:45:00,High,Chest pain,Haibowal,30.934219,75.868291,AMB-108,Available,9.1,20,Civil Hospital Ludhiana,30.92,75.85,15,0,Arrived,Basic Life Support
+168,REQ-1168,2026-09-09 20:25:00,Low,Unconscious patient,Bus Stand,30.908903,75.86376,AMB-101,Available,8.4,18,DMCH,30.887,75.846,30,20,On the Way,"Advanced Life Support, Oxygen"
+169,REQ-1169,2026-09-09 07:55:00,High,Fever / weakness,Jagraon Bridge,30.901433,75.855422,AMB-101,Available,1.6,8,DMCH,30.887,75.846,3,6,Assigned,"Trauma, Oxygen"
+170,REQ-1170,2026-09-09 08:35:00,Critical,Severe injury,Dugri,30.869311,75.844249,AMB-108,Available,4.5,14,Fortis Hospital,30.901,75.842,23,1,On the Way,Basic Life Support
+171,REQ-1171,2026-09-09 09:40:00,High,Abdominal pain,Bharat Nagar Chowk,30.901664,75.851713,AMB-103,Available,3.3,10,CityCare Hospital,30.912,75.851,10,17,Arrived,"Cardiac, Oxygen"
+172,REQ-1172,2026-09-09 10:50:00,Medium,Unconscious patient,Ferozepur Road,30.887302,75.814768,AMB-104,Available,9.5,17,DMCH,30.887,75.846,7,9,Arrived,"Trauma, Oxygen"
+173,REQ-1173,2026-09-09 11:55:00,Medium,Chest pain,Model Town,30.890394,75.836815,AMB-105,Available,3.3,9,Fortis Hospital,30.901,75.842,21,17,Completed,"Oxygen, Basic Life Support"
+174,REQ-1174,2026-09-09 12:30:00,Low,Breathing difficulty,Gill Road,30.865714,75.851629,AMB-102,Available,10.0,20,DMCH,30.887,75.846,20,8,Completed,"Trauma, Advanced Life Support"
+175,REQ-1175,2026-09-09 13:15:00,High,Unconscious patient,Sarabha Nagar,30.886118,75.81347,AMB-110,Available,3.2,5,CityCare Hospital,30.912,75.851,21,16,On the Way,Basic Life Support
+176,REQ-1176,2026-09-09 14:50:00,Critical,Chest pain,Bharat Nagar Chowk,30.907421,75.845316,AMB-103,Available,3.6,9,Fortis Hospital,30.901,75.842,29,5,Completed,"Cardiac, Oxygen"
+177,REQ-1177,2026-09-09 15:50:00,Low,Abdominal pain,Haibowal,30.938516,75.875677,AMB-105,Available,11.3,24,Civil Hospital Ludhiana,30.92,75.85,1,2,On the Way,Basic Life Support
+178,REQ-1178,2026-09-09 16:40:00,Low,Cardiac emergency,Bus Stand,30.912397,75.847252,AMB-103,Available,9.1,20,DMCH,30.887,75.846,26,12,Completed,"Advanced Life Support, Oxygen"
+179,REQ-1179,2026-09-09 17:10:00,Low,Unconscious patient,Jagraon Bridge,30.923302,75.835278,AMB-110,Available,11.3,23,DMCH,30.887,75.846,9,14,Completed,"Trauma, Oxygen"
+180,REQ-1180,2026-09-09 18:10:00,High,Severe injury,Dugri,30.881264,75.830921,AMB-108,Available,10.4,25,Fortis Hospital,30.901,75.842,5,0,Arrived,Basic Life Support
+181,REQ-1181,2026-09-10 19:20:00,Medium,Breathing difficulty,Bharat Nagar Chowk,30.904229,75.861462,AMB-107,Available,7.2,19,CityCare Hospital,30.912,75.851,10,2,Completed,"Cardiac, Oxygen"
+182,REQ-1182,2026-09-10 20:50:00,Low,Abdominal pain,Ferozepur Road,30.878708,75.816441,AMB-105,Available,2.0,6,DMCH,30.887,75.846,24,8,Arrived,"Trauma, Oxygen"
+183,REQ-1183,2026-09-10 07:20:00,Medium,Unconscious patient,Model Town,30.895611,75.840783,AMB-101,Available,7.4,17,Fortis Hospital,30.901,75.842,9,5,Completed,"Oxygen, Basic Life Support"
+184,REQ-1184,2026-09-10 08:50:00,Low,Unconscious patient,Gill Road,30.877709,75.862161,AMB-105,Available,6.5,12,DMCH,30.887,75.846,7,4,Completed,"Trauma, Advanced Life Support"
+185,REQ-1185,2026-09-10 09:10:00,Low,Chest pain,Sarabha Nagar,30.894475,75.811477,AMB-108,Available,6.0,17,CityCare Hospital,30.912,75.851,26,6,On the Way,Basic Life Support
+186,REQ-1186,2026-09-10 10:50:00,Low,Road accident,Bharat Nagar Chowk,30.901665,75.858145,AMB-106,Available,9.3,18,Fortis Hospital,30.901,75.842,3,1,On the Way,"Cardiac, Oxygen"
+187,REQ-1187,2026-09-10 11:45:00,Critical,Abdominal pain,Haibowal,30.922487,75.859162,AMB-110,Available,6.9,16,Civil Hospital Ludhiana,30.92,75.85,14,1,Completed,Basic Life Support
+188,REQ-1188,2026-09-10 12:10:00,High,Cardiac emergency,Bus Stand,30.901764,75.862183,AMB-105,Available,6.6,16,DMCH,30.887,75.846,8,0,On the Way,"Advanced Life Support, Oxygen"
+189,REQ-1189,2026-09-10 13:45:00,High,Road accident,Jagraon Bridge,30.913235,75.836808,AMB-102,Available,1.8,7,DMCH,30.887,75.846,1,9,Completed,"Trauma, Oxygen"
+190,REQ-1190,2026-09-10 14:10:00,Medium,Fever / weakness,Dugri,30.868234,75.84774,AMB-108,Available,9.5,23,Fortis Hospital,30.901,75.842,12,2,On the Way,Basic Life Support
+191,REQ-1191,2026-09-10 15:50:00,Critical,Fever / weakness,Bharat Nagar Chowk,30.901765,75.864136,AMB-104,Available,10.5,22,CityCare Hospital,30.912,75.851,9,14,Completed,"Cardiac, Oxygen"
+192,REQ-1192,2026-09-10 16:40:00,High,Abdominal pain,Ferozepur Road,30.879385,75.817269,AMB-102,Available,5.2,12,DMCH,30.887,75.846,13,19,Assigned,"Trauma, Oxygen"
+193,REQ-1193,2026-09-10 17:15:00,Critical,Cardiac emergency,Model Town,30.889393,75.840161,AMB-101,Available,3.3,5,Fortis Hospital,30.901,75.842,12,14,On the Way,"Oxygen, Basic Life Support"
+194,REQ-1194,2026-09-10 18:40:00,Low,Cardiac emergency,Gill Road,30.861204,75.872805,AMB-104,Available,3.4,12,DMCH,30.887,75.846,18,10,Arrived,"Trauma, Advanced Life Support"
+195,REQ-1195,2026-09-10 19:15:00,Critical,Severe injury,Sarabha Nagar,30.894407,75.803255,AMB-109,Available,4.3,14,CityCare Hospital,30.912,75.851,29,5,Completed,Basic Life Support
+196,REQ-1196,2026-09-10 20:40:00,Low,Fever / weakness,Bharat Nagar Chowk,30.909474,75.851862,AMB-107,Available,6.5,13,Fortis Hospital,30.901,75.842,12,5,Completed,"Cardiac, Oxygen"
+197,REQ-1197,2026-09-10 07:15:00,High,Breathing difficulty,Haibowal,30.943173,75.880442,AMB-109,Available,10.3,21,Civil Hospital Ludhiana,30.92,75.85,17,16,On the Way,Basic Life Support
+198,REQ-1198,2026-09-10 08:30:00,High,Road accident,Bus Stand,30.912667,75.867414,AMB-102,Available,3.7,8,DMCH,30.887,75.846,1,8,Completed,"Advanced Life Support, Oxygen"
+199,REQ-1199,2026-09-10 09:50:00,Critical,Road accident,Jagraon Bridge,30.902645,75.857851,AMB-109,Available,7.7,13,DMCH,30.887,75.846,27,10,Arrived,"Trauma, Oxygen"
+200,REQ-1200,2026-09-10 10:00:00,Critical,Road accident,Dugri,30.879406,75.84363,AMB-104,Available,3.3,11,Fortis Hospital,30.901,75.842,6,12,On the Way,Basic Life Support
+201,REQ-1201,2026-09-11 11:40:00,High,Abdominal pain,Bharat Nagar Chowk,30.90191,75.853078,AMB-105,Available,4.5,11,CityCare Hospital,30.912,75.851,14,3,Completed,"Cardiac, Oxygen"
+202,REQ-1202,2026-09-11 12:25:00,High,Fever / weakness,Ferozepur Road,30.870371,75.834923,AMB-103,Available,11.1,20,DMCH,30.887,75.846,29,18,Completed,"Trauma, Oxygen"
+203,REQ-1203,2026-09-11 13:20:00,High,Fever / weakness,Model Town,30.893094,75.827372,AMB-109,Available,2.7,10,Fortis Hospital,30.901,75.842,10,8,Completed,"Oxygen, Basic Life Support"
+204,REQ-1204,2026-09-11 14:55:00,High,Breathing difficulty,Gill Road,30.878983,75.853565,AMB-103,Available,8.1,19,DMCH,30.887,75.846,5,17,Assigned,"Trauma, Advanced Life Support"
+205,REQ-1205,2026-09-11 15:40:00,Medium,Cardiac emergency,Sarabha Nagar,30.90493,75.807372,AMB-104,Available,1.4,3,CityCare Hospital,30.912,75.851,0,6,Completed,Basic Life Support
+206,REQ-1206,2026-09-11 16:25:00,Medium,Abdominal pain,Bharat Nagar Chowk,30.905679,75.842772,AMB-109,Available,1.7,3,Fortis Hospital,30.901,75.842,0,16,Arrived,"Cardiac, Oxygen"
+207,REQ-1207,2026-09-11 17:40:00,Critical,Fever / weakness,Haibowal,30.943185,75.880293,AMB-102,Available,11.8,29,Civil Hospital Ludhiana,30.92,75.85,4,7,On the Way,Basic Life Support
+208,REQ-1208,2026-09-11 18:45:00,Medium,Unconscious patient,Bus Stand,30.908848,75.844371,AMB-107,Available,6.8,13,DMCH,30.887,75.846,22,7,Arrived,"Advanced Life Support, Oxygen"
+209,REQ-1209,2026-09-11 19:50:00,Critical,Cardiac emergency,Jagraon Bridge,30.899805,75.846378,AMB-109,Available,10.1,23,DMCH,30.887,75.846,0,5,Assigned,"Trauma, Oxygen"
+210,REQ-1210,2026-09-11 20:35:00,Medium,Chest pain,Dugri,30.873976,75.846739,AMB-102,Available,10.3,22,Fortis Hospital,30.901,75.842,7,6,Completed,Basic Life Support
+211,REQ-1211,2026-09-11 07:20:00,Critical,Unconscious patient,Bharat Nagar Chowk,30.912879,75.859205,AMB-101,Available,1.5,4,CityCare Hospital,30.912,75.851,0,6,On the Way,"Cardiac, Oxygen"
+212,REQ-1212,2026-09-11 08:55:00,Low,Unconscious patient,Ferozepur Road,30.873874,75.816214,AMB-107,Available,10.0,23,DMCH,30.887,75.846,10,12,On the Way,"Trauma, Oxygen"
+213,REQ-1213,2026-09-11 09:55:00,High,Chest pain,Model Town,30.877611,75.833113,AMB-102,Available,9.0,19,Fortis Hospital,30.901,75.842,30,19,Completed,"Oxygen, Basic Life Support"
+214,REQ-1214,2026-09-11 10:25:00,High,Abdominal pain,Gill Road,30.871718,75.853674,AMB-107,Available,1.3,7,DMCH,30.887,75.846,18,12,Assigned,"Trauma, Advanced Life Support"
+215,REQ-1215,2026-09-11 11:45:00,High,Road accident,Sarabha Nagar,30.884461,75.799627,AMB-103,Available,4.2,10,CityCare Hospital,30.912,75.851,11,3,Assigned,Basic Life Support
+216,REQ-1216,2026-09-11 12:00:00,High,Unconscious patient,Bharat Nagar Chowk,30.888967,75.844919,AMB-107,Available,11.4,24,Fortis Hospital,30.901,75.842,16,13,Assigned,"Cardiac, Oxygen"
+217,REQ-1217,2026-09-11 13:00:00,Medium,Chest pain,Haibowal,30.944912,75.85337,AMB-107,Available,2.0,3,Civil Hospital Ludhiana,30.92,75.85,23,17,On the Way,Basic Life Support
+218,REQ-1218,2026-09-11 14:45:00,Medium,Breathing difficulty,Bus Stand,30.889165,75.851034,AMB-108,Available,6.7,11,DMCH,30.887,75.846,13,8,Completed,"Advanced Life Support, Oxygen"
+219,REQ-1219,2026-09-11 15:20:00,Critical,Unconscious patient,Jagraon Bridge,30.925327,75.856627,AMB-108,Available,6.3,13,DMCH,30.887,75.846,14,3,On the Way,"Trauma, Oxygen"
+220,REQ-1220,2026-09-11 16:20:00,High,Fever / weakness,Dugri,30.881122,75.830886,AMB-106,Available,1.1,7,Fortis Hospital,30.901,75.842,19,4,Arrived,Basic Life Support
+221,REQ-1221,2026-09-12 17:25:00,Medium,Abdominal pain,Bharat Nagar Chowk,30.895325,75.871237,AMB-106,Available,7.6,17,CityCare Hospital,30.912,75.851,20,15,On the Way,"Cardiac, Oxygen"
+222,REQ-1222,2026-09-12 18:25:00,Medium,Fever / weakness,Ferozepur Road,30.87995,75.836962,AMB-104,Available,5.1,14,DMCH,30.887,75.846,5,17,Assigned,"Trauma, Oxygen"
+223,REQ-1223,2026-09-12 19:55:00,Medium,Abdominal pain,Model Town,30.899931,75.844938,AMB-102,Available,6.1,16,Fortis Hospital,30.901,75.842,21,15,On the Way,"Oxygen, Basic Life Support"
+224,REQ-1224,2026-09-12 20:50:00,High,Breathing difficulty,Gill Road,30.878457,75.866672,AMB-102,Available,4.3,12,DMCH,30.887,75.846,15,18,Completed,"Trauma, Advanced Life Support"
+225,REQ-1225,2026-09-12 07:40:00,Low,Fever / weakness,Sarabha Nagar,30.898309,75.818722,AMB-106,Available,6.6,17,CityCare Hospital,30.912,75.851,19,20,Assigned,Basic Life Support
+226,REQ-1226,2026-09-12 08:05:00,Medium,Chest pain,Bharat Nagar Chowk,30.89089,75.86068,AMB-110,Available,9.5,26,Fortis Hospital,30.901,75.842,20,12,Arrived,"Cardiac, Oxygen"
+227,REQ-1227,2026-09-12 09:30:00,Critical,Severe injury,Haibowal,30.93432,75.868564,AMB-110,Available,2.2,5,Civil Hospital Ludhiana,30.92,75.85,14,11,Completed,Basic Life Support
+228,REQ-1228,2026-09-12 10:35:00,Medium,Breathing difficulty,Bus Stand,30.895349,75.842737,AMB-102,Available,9.5,16,DMCH,30.887,75.846,3,4,Arrived,"Advanced Life Support, Oxygen"
+229,REQ-1229,2026-09-12 11:20:00,Medium,Abdominal pain,Jagraon Bridge,30.907449,75.837929,AMB-108,Available,4.8,10,DMCH,30.887,75.846,1,3,Assigned,"Trauma, Oxygen"
+230,REQ-1230,2026-09-12 12:25:00,Medium,Breathing difficulty,Dugri,30.884898,75.843215,AMB-109,Available,8.1,13,Fortis Hospital,30.901,75.842,10,17,Completed,Basic Life Support
+231,REQ-1231,2026-09-12 13:35:00,High,Breathing difficulty,Bharat Nagar Chowk,30.891492,75.862019,AMB-107,Available,3.6,9,CityCare Hospital,30.912,75.851,28,6,Completed,"Cardiac, Oxygen"
+232,REQ-1232,2026-09-12 14:45:00,Critical,Severe injury,Ferozepur Road,30.875174,75.83157,AMB-102,Available,5.7,15,DMCH,30.887,75.846,5,11,Arrived,"Trauma, Oxygen"
+233,REQ-1233,2026-09-12 15:15:00,High,Abdominal pain,Model Town,30.891831,75.839173,AMB-110,Available,6.0,13,Fortis Hospital,30.901,75.842,18,3,Arrived,"Oxygen, Basic Life Support"
+234,REQ-1234,2026-09-12 16:25:00,Medium,Unconscious patient,Gill Road,30.88456,75.860705,AMB-103,Available,10.3,18,DMCH,30.887,75.846,9,3,On the Way,"Trauma, Advanced Life Support"
+235,REQ-1235,2026-09-12 17:25:00,High,Fever / weakness,Sarabha Nagar,30.899893,75.812244,AMB-107,Available,8.6,18,CityCare Hospital,30.912,75.851,17,20,On the Way,Basic Life Support
+236,REQ-1236,2026-09-12 18:40:00,High,Breathing difficulty,Bharat Nagar Chowk,30.895337,75.85583,AMB-101,Available,2.8,6,Fortis Hospital,30.901,75.842,15,4,On the Way,"Cardiac, Oxygen"
+237,REQ-1237,2026-09-12 19:30:00,High,Abdominal pain,Haibowal,30.931274,75.867752,AMB-108,Available,11.6,21,Civil Hospital Ludhiana,30.92,75.85,18,0,On the Way,Basic Life Support
+238,REQ-1238,2026-09-12 20:20:00,High,Unconscious patient,Bus Stand,30.890046,75.85572,AMB-108,Available,1.4,3,DMCH,30.887,75.846,18,3,Arrived,"Advanced Life Support, Oxygen"
+239,REQ-1239,2026-09-12 07:40:00,High,Cardiac emergency,Jagraon Bridge,30.9198,75.848241,AMB-104,Available,10.1,22,DMCH,30.887,75.846,23,20,On the Way,"Trauma, Oxygen"
+240,REQ-1240,2026-09-12 08:20:00,Critical,Unconscious patient,Dugri,30.867457,75.845502,AMB-108,Available,10.6,22,Fortis Hospital,30.901,75.842,24,7,On the Way,Basic Life Support
+241,REQ-1241,2026-09-13 09:55:00,High,Fever / weakness,Bharat Nagar Chowk,30.890879,75.846477,AMB-104,Available,7.5,15,CityCare Hospital,30.912,75.851,18,11,Arrived,"Cardiac, Oxygen"
+242,REQ-1242,2026-09-13 10:45:00,High,Unconscious patient,Ferozepur Road,30.87768,75.81702,AMB-109,Available,6.9,20,DMCH,30.887,75.846,26,3,On the Way,"Trauma, Oxygen"
+243,REQ-1243,2026-09-13 11:30:00,Low,Breathing difficulty,Model Town,30.897043,75.823981,AMB-103,Available,11.1,23,Fortis Hospital,30.901,75.842,24,12,Completed,"Oxygen, Basic Life Support"
+244,REQ-1244,2026-09-13 12:10:00,High,Fever / weakness,Gill Road,30.868255,75.845265,AMB-102,Available,7.4,18,DMCH,30.887,75.846,8,11,Completed,"Trauma, Advanced Life Support"
+245,REQ-1245,2026-09-13 13:35:00,Critical,Road accident,Sarabha Nagar,30.903928,75.808753,AMB-106,Available,4.6,14,CityCare Hospital,30.912,75.851,12,6,Completed,Basic Life Support
+246,REQ-1246,2026-09-13 14:15:00,High,Unconscious patient,Bharat Nagar Chowk,30.896033,75.859638,AMB-110,Available,6.4,15,Fortis Hospital,30.901,75.842,28,1,Assigned,"Cardiac, Oxygen"
+247,REQ-1247,2026-09-13 15:05:00,Medium,Cardiac emergency,Haibowal,30.922727,75.87873,AMB-108,Available,7.9,17,Civil Hospital Ludhiana,30.92,75.85,6,4,Arrived,Basic Life Support
+248,REQ-1248,2026-09-13 16:10:00,Low,Road accident,Bus Stand,30.904638,75.849512,AMB-106,Available,10.6,25,DMCH,30.887,75.846,5,1,Completed,"Advanced Life Support, Oxygen"
+249,REQ-1249,2026-09-13 17:50:00,Medium,Severe injury,Jagraon Bridge,30.909877,75.837736,AMB-102,Available,4.4,9,DMCH,30.887,75.846,2,4,On the Way,"Trauma, Oxygen"
+250,REQ-1250,2026-09-13 18:40:00,Critical,Chest pain,Dugri,30.881513,75.850645,AMB-107,Available,8.5,20,Fortis Hospital,30.901,75.842,2,7,Completed,Basic Life Support
+251,REQ-1251,2026-09-13 19:05:00,Critical,Chest pain,Bharat Nagar Chowk,30.896927,75.851278,AMB-107,Available,9.0,19,CityCare Hospital,30.912,75.851,20,4,Assigned,"Cardiac, Oxygen"
+252,REQ-1252,2026-09-13 20:40:00,Medium,Breathing difficulty,Ferozepur Road,30.882203,75.830673,AMB-103,Available,7.2,19,DMCH,30.887,75.846,21,14,On the Way,"Trauma, Oxygen"
+253,REQ-1253,2026-09-13 07:05:00,Critical,Road accident,Model Town,30.893687,75.831521,AMB-107,Available,10.9,19,Fortis Hospital,30.901,75.842,7,8,Assigned,"Oxygen, Basic Life Support"
+254,REQ-1254,2026-09-13 08:15:00,Medium,Unconscious patient,Gill Road,30.880369,75.863714,AMB-105,Available,7.1,15,DMCH,30.887,75.846,16,6,Completed,"Trauma, Advanced Life Support"
+255,REQ-1255,2026-09-13 09:20:00,Medium,Severe injury,Sarabha Nagar,30.896847,75.798382,AMB-108,Available,8.1,15,CityCare Hospital,30.912,75.851,16,0,Arrived,Basic Life Support
+256,REQ-1256,2026-09-13 10:25:00,Low,Fever / weakness,Bharat Nagar Chowk,30.896862,75.862788,AMB-108,Available,2.5,5,Fortis Hospital,30.901,75.842,0,18,Assigned,"Cardiac, Oxygen"
+257,REQ-1257,2026-09-13 11:00:00,Critical,Cardiac emergency,Haibowal,30.94746,75.864939,AMB-105,Available,3.9,11,Civil Hospital Ludhiana,30.92,75.85,24,13,Completed,Basic Life Support
+258,REQ-1258,2026-09-13 12:55:00,Medium,Breathing difficulty,Bus Stand,30.893324,75.851297,AMB-109,Available,5.4,13,DMCH,30.887,75.846,17,10,Completed,"Advanced Life Support, Oxygen"
+259,REQ-1259,2026-09-13 13:45:00,Medium,Road accident,Jagraon Bridge,30.906305,75.848125,AMB-104,Available,8.0,12,DMCH,30.887,75.846,29,13,Assigned,"Trauma, Oxygen"
+260,REQ-1260,2026-09-13 14:35:00,Critical,Breathing difficulty,Dugri,30.860583,75.842237,AMB-101,Available,7.7,14,Fortis Hospital,30.901,75.842,16,16,Arrived,Basic Life Support
+261,REQ-1261,2026-09-14 15:10:00,Medium,Unconscious patient,Bharat Nagar Chowk,30.907888,75.845842,AMB-101,Available,5.1,12,CityCare Hospital,30.912,75.851,8,16,Assigned,"Cardiac, Oxygen"
+262,REQ-1262,2026-09-14 16:20:00,Medium,Road accident,Ferozepur Road,30.883884,75.824323,AMB-101,Available,8.8,20,DMCH,30.887,75.846,5,11,On the Way,"Trauma, Oxygen"
+263,REQ-1263,2026-09-14 17:20:00,Low,Road accident,Model Town,30.882852,75.835265,AMB-101,Available,9.5,20,Fortis Hospital,30.901,75.842,7,1,Completed,"Oxygen, Basic Life Support"
+264,REQ-1264,2026-09-14 18:25:00,Critical,Cardiac emergency,Gill Road,30.873586,75.870418,AMB-107,Available,5.2,9,DMCH,30.887,75.846,13,10,Arrived,"Trauma, Advanced Life Support"
+265,REQ-1265,2026-09-14 19:05:00,Critical,Cardiac emergency,Sarabha Nagar,30.88738,75.81913,AMB-101,Available,7.3,16,CityCare Hospital,30.912,75.851,28,14,Arrived,Basic Life Support
+266,REQ-1266,2026-09-14 20:20:00,Medium,Cardiac emergency,Bharat Nagar Chowk,30.896968,75.851048,AMB-105,Available,4.6,10,Fortis Hospital,30.901,75.842,14,11,Completed,"Cardiac, Oxygen"
+267,REQ-1267,2026-09-14 07:15:00,High,Severe injury,Haibowal,30.923517,75.880972,AMB-101,Available,9.1,16,Civil Hospital Ludhiana,30.92,75.85,20,0,Arrived,Basic Life Support
+268,REQ-1268,2026-09-14 08:00:00,High,Unconscious patient,Bus Stand,30.888118,75.857894,AMB-104,Available,9.3,16,DMCH,30.887,75.846,4,8,Assigned,"Advanced Life Support, Oxygen"
+269,REQ-1269,2026-09-14 09:00:00,Low,Fever / weakness,Jagraon Bridge,30.918025,75.846175,AMB-102,Available,11.1,25,DMCH,30.887,75.846,4,20,Completed,"Trauma, Oxygen"
+270,REQ-1270,2026-09-14 10:05:00,Critical,Breathing difficulty,Dugri,30.864103,75.82883,AMB-106,Available,7.5,19,Fortis Hospital,30.901,75.842,22,10,Arrived,Basic Life Support
+271,REQ-1271,2026-09-14 11:35:00,Critical,Severe injury,Bharat Nagar Chowk,30.889983,75.865404,AMB-102,Available,4.0,7,CityCare Hospital,30.912,75.851,14,14,Arrived,"Cardiac, Oxygen"
+272,REQ-1272,2026-09-14 12:30:00,High,Severe injury,Ferozepur Road,30.882558,75.8229,AMB-102,Available,2.3,8,DMCH,30.887,75.846,9,19,Assigned,"Trauma, Oxygen"
+273,REQ-1273,2026-09-14 13:15:00,High,Road accident,Model Town,30.897335,75.849052,AMB-107,Available,10.2,23,Fortis Hospital,30.901,75.842,9,8,On the Way,"Oxygen, Basic Life Support"
+274,REQ-1274,2026-09-14 14:00:00,Low,Severe injury,Gill Road,30.859842,75.846057,AMB-103,Available,11.5,17,DMCH,30.887,75.846,26,7,On the Way,"Trauma, Advanced Life Support"
+275,REQ-1275,2026-09-14 15:15:00,High,Road accident,Sarabha Nagar,30.89947,75.802765,AMB-102,Available,10.1,14,CityCare Hospital,30.912,75.851,6,20,Completed,Basic Life Support
+276,REQ-1276,2026-09-14 16:10:00,Medium,Chest pain,Bharat Nagar Chowk,30.889576,75.870568,AMB-101,Available,2.0,7,Fortis Hospital,30.901,75.842,13,12,Completed,"Cardiac, Oxygen"
+277,REQ-1277,2026-09-14 17:00:00,High,Chest pain,Haibowal,30.925441,75.858615,AMB-105,Available,5.2,10,Civil Hospital Ludhiana,30.92,75.85,1,19,On the Way,Basic Life Support
+278,REQ-1278,2026-09-14 18:50:00,High,Abdominal pain,Bus Stand,30.886829,75.850393,AMB-103,Available,4.2,12,DMCH,30.887,75.846,28,16,On the Way,"Advanced Life Support, Oxygen"
+279,REQ-1279,2026-09-14 19:50:00,High,Cardiac emergency,Jagraon Bridge,30.926682,75.858457,AMB-106,Available,11.9,24,DMCH,30.887,75.846,11,18,Arrived,"Trauma, Oxygen"
+280,REQ-1280,2026-09-14 20:30:00,Critical,Severe injury,Dugri,30.857879,75.845321,AMB-105,Available,4.0,9,Fortis Hospital,30.901,75.842,16,11,On the Way,Basic Life Support
+281,REQ-1281,2026-09-15 07:10:00,Medium,Unconscious patient,Bharat Nagar Chowk,30.901911,75.866037,AMB-101,Available,2.1,5,CityCare Hospital,30.912,75.851,18,12,Arrived,"Cardiac, Oxygen"
+282,REQ-1282,2026-09-15 08:10:00,Medium,Chest pain,Ferozepur Road,30.896419,75.809846,AMB-106,Available,2.9,10,DMCH,30.887,75.846,4,18,On the Way,"Trauma, Oxygen"
+283,REQ-1283,2026-09-15 09:35:00,Critical,Cardiac emergency,Model Town,30.878708,75.826979,AMB-104,Available,7.0,13,Fortis Hospital,30.901,75.842,0,10,On the Way,"Oxygen, Basic Life Support"
+284,REQ-1284,2026-09-15 10:10:00,Critical,Chest pain,Gill Road,30.858787,75.847431,AMB-103,Available,4.7,13,DMCH,30.887,75.846,27,11,Assigned,"Trauma, Advanced Life Support"
+285,REQ-1285,2026-09-15 11:25:00,Medium,Road accident,Sarabha Nagar,30.892097,75.804678,AMB-103,Available,8.7,20,CityCare Hospital,30.912,75.851,25,20,Completed,Basic Life Support
+286,REQ-1286,2026-09-15 12:50:00,Medium,Chest pain,Bharat Nagar Chowk,30.892597,75.859969,AMB-103,Available,4.5,13,Fortis Hospital,30.901,75.842,22,9,On the Way,"Cardiac, Oxygen"
+287,REQ-1287,2026-09-15 13:10:00,Low,Fever / weakness,Haibowal,30.944523,75.876125,AMB-110,Available,9.0,17,Civil Hospital Ludhiana,30.92,75.85,10,19,On the Way,Basic Life Support
+288,REQ-1288,2026-09-15 14:50:00,Low,Breathing difficulty,Bus Stand,30.894935,75.844334,AMB-106,Available,7.2,17,DMCH,30.887,75.846,20,2,Arrived,"Advanced Life Support, Oxygen"
+289,REQ-1289,2026-09-15 15:35:00,High,Road accident,Jagraon Bridge,30.907514,75.858611,AMB-101,Available,1.1,5,DMCH,30.887,75.846,23,13,On the Way,"Trauma, Oxygen"
+290,REQ-1290,2026-09-15 16:30:00,High,Fever / weakness,Dugri,30.860043,75.835385,AMB-110,Available,6.4,17,Fortis Hospital,30.901,75.842,7,5,Completed,Basic Life Support
+291,REQ-1291,2026-09-15 17:05:00,Critical,Cardiac emergency,Bharat Nagar Chowk,30.895462,75.87085,AMB-102,Available,9.8,19,CityCare Hospital,30.912,75.851,5,2,Assigned,"Cardiac, Oxygen"
+292,REQ-1292,2026-09-15 18:25:00,Medium,Abdominal pain,Ferozepur Road,30.890135,75.82194,AMB-103,Available,7.5,17,DMCH,30.887,75.846,5,1,Assigned,"Trauma, Oxygen"
+293,REQ-1293,2026-09-15 19:25:00,Critical,Unconscious patient,Model Town,30.895818,75.828922,AMB-102,Available,3.3,9,Fortis Hospital,30.901,75.842,17,15,On the Way,"Oxygen, Basic Life Support"
+294,REQ-1294,2026-09-15 20:00:00,High,Unconscious patient,Gill Road,30.881717,75.861753,AMB-108,Available,5.0,8,DMCH,30.887,75.846,6,5,Arrived,"Trauma, Advanced Life Support"
+295,REQ-1295,2026-09-15 07:05:00,Critical,Fever / weakness,Sarabha Nagar,30.896128,75.821846,AMB-105,Available,6.2,13,CityCare Hospital,30.912,75.851,12,5,Arrived,Basic Life Support
+296,REQ-1296,2026-09-15 08:30:00,High,Unconscious patient,Bharat Nagar Chowk,30.899092,75.850202,AMB-105,Available,5.1,10,Fortis Hospital,30.901,75.842,24,3,Assigned,"Cardiac, Oxygen"
+297,REQ-1297,2026-09-15 09:50:00,High,Severe injury,Haibowal,30.935608,75.878224,AMB-109,Available,4.8,12,Civil Hospital Ludhiana,30.92,75.85,21,15,On the Way,Basic Life Support
+298,REQ-1298,2026-09-15 10:35:00,High,Cardiac emergency,Bus Stand,30.900063,75.869014,AMB-110,Available,4.3,12,DMCH,30.887,75.846,4,3,Completed,"Advanced Life Support, Oxygen"
+299,REQ-1299,2026-09-15 11:10:00,Critical,Severe injury,Jagraon Bridge,30.921254,75.838786,AMB-107,Available,11.4,22,DMCH,30.887,75.846,13,6,On the Way,"Trauma, Oxygen"
+300,REQ-1300,2026-09-15 12:45:00,Low,Road accident,Dugri,30.859611,75.837691,AMB-109,Available,3.8,8,Fortis Hospital,30.901,75.842,16,14,Assigned,Basic Life Support
+301,REQ-1301,2026-09-16 13:55:00,High,Fever / weakness,Bharat Nagar Chowk,30.889276,75.846789,AMB-110,Available,7.9,15,CityCare Hospital,30.912,75.851,29,3,Assigned,"Cardiac, Oxygen"
+302,REQ-1302,2026-09-16 14:20:00,Low,Fever / weakness,Ferozepur Road,30.876924,75.828644,AMB-110,Available,10.5,20,DMCH,30.887,75.846,5,8,Completed,"Trauma, Oxygen"
+303,REQ-1303,2026-09-16 15:10:00,Medium,Fever / weakness,Model Town,30.877163,75.846687,AMB-106,Available,7.8,15,Fortis Hospital,30.901,75.842,23,15,Arrived,"Oxygen, Basic Life Support"
+304,REQ-1304,2026-09-16 16:25:00,Medium,Unconscious patient,Gill Road,30.866328,75.868285,AMB-102,Available,1.2,4,DMCH,30.887,75.846,4,9,Completed,"Trauma, Advanced Life Support"
+305,REQ-1305,2026-09-16 17:25:00,High,Road accident,Sarabha Nagar,30.887638,75.801342,AMB-107,Available,4.0,12,CityCare Hospital,30.912,75.851,27,11,Assigned,Basic Life Support
+306,REQ-1306,2026-09-16 18:40:00,Critical,Fever / weakness,Bharat Nagar Chowk,30.889969,75.867839,AMB-110,Available,9.7,15,Fortis Hospital,30.901,75.842,28,6,Assigned,"Cardiac, Oxygen"
+307,REQ-1307,2026-09-16 19:15:00,Critical,Chest pain,Haibowal,30.940139,75.861219,AMB-108,Available,1.4,8,Civil Hospital Ludhiana,30.92,75.85,29,3,Assigned,Basic Life Support
+308,REQ-1308,2026-09-16 20:15:00,Medium,Breathing difficulty,Bus Stand,30.913816,75.856237,AMB-109,Available,5.1,10,DMCH,30.887,75.846,26,8,Assigned,"Advanced Life Support, Oxygen"
+309,REQ-1309,2026-09-16 07:20:00,Critical,Severe injury,Jagraon Bridge,30.922713,75.854421,AMB-104,Available,1.3,5,DMCH,30.887,75.846,16,0,Assigned,"Trauma, Oxygen"
+310,REQ-1310,2026-09-16 08:35:00,Medium,Cardiac emergency,Dugri,30.863713,75.83925,AMB-105,Available,11.0,27,Fortis Hospital,30.901,75.842,20,8,Completed,Basic Life Support
+311,REQ-1311,2026-09-16 09:30:00,High,Severe injury,Bharat Nagar Chowk,30.899901,75.862616,AMB-110,Available,10.4,18,CityCare Hospital,30.912,75.851,0,16,Arrived,"Cardiac, Oxygen"
+312,REQ-1312,2026-09-16 10:40:00,Medium,Unconscious patient,Ferozepur Road,30.889532,75.823452,AMB-106,Available,8.1,23,DMCH,30.887,75.846,10,8,Arrived,"Trauma, Oxygen"
+313,REQ-1313,2026-09-16 11:50:00,Low,Unconscious patient,Model Town,30.881651,75.835519,AMB-104,Available,8.8,23,Fortis Hospital,30.901,75.842,12,10,On the Way,"Oxygen, Basic Life Support"
+314,REQ-1314,2026-09-16 12:55:00,High,Unconscious patient,Gill Road,30.864783,75.855557,AMB-107,Available,1.3,7,DMCH,30.887,75.846,22,18,On the Way,"Trauma, Advanced Life Support"
+315,REQ-1315,2026-09-16 13:25:00,High,Abdominal pain,Sarabha Nagar,30.909196,75.815156,AMB-109,Available,9.0,16,CityCare Hospital,30.912,75.851,26,17,On the Way,Basic Life Support
+316,REQ-1316,2026-09-16 14:20:00,Critical,Unconscious patient,Bharat Nagar Chowk,30.907656,75.859071,AMB-103,Available,2.1,7,Fortis Hospital,30.901,75.842,20,2,On the Way,"Cardiac, Oxygen"
+317,REQ-1317,2026-09-16 15:25:00,Low,Fever / weakness,Haibowal,30.942643,75.86294,AMB-105,Available,3.5,10,Civil Hospital Ludhiana,30.92,75.85,27,3,Completed,Basic Life Support
+318,REQ-1318,2026-09-16 16:00:00,Medium,Road accident,Bus Stand,30.899167,75.847836,AMB-102,Available,10.5,25,DMCH,30.887,75.846,16,9,Completed,"Advanced Life Support, Oxygen"
+319,REQ-1319,2026-09-16 17:00:00,Critical,Severe injury,Jagraon Bridge,30.90728,75.864616,AMB-108,Available,10.6,21,DMCH,30.887,75.846,5,2,Completed,"Trauma, Oxygen"
+320,REQ-1320,2026-09-16 18:25:00,Critical,Cardiac emergency,Dugri,30.857141,75.829206,AMB-103,Available,7.9,16,Fortis Hospital,30.901,75.842,15,2,On the Way,Basic Life Support
+321,REQ-1321,2026-09-17 19:45:00,High,Fever / weakness,Bharat Nagar Chowk,30.91486,75.853799,AMB-101,Available,5.8,16,CityCare Hospital,30.912,75.851,11,0,Arrived,"Cardiac, Oxygen"
+322,REQ-1322,2026-09-17 20:40:00,Medium,Severe injury,Ferozepur Road,30.875788,75.83531,AMB-105,Available,3.1,8,DMCH,30.887,75.846,16,18,Arrived,"Trauma, Oxygen"
+323,REQ-1323,2026-09-17 07:10:00,Critical,Unconscious patient,Model Town,30.889678,75.835609,AMB-109,Available,1.7,8,Fortis Hospital,30.901,75.842,4,10,Completed,"Oxygen, Basic Life Support"
+324,REQ-1324,2026-09-17 08:25:00,Critical,Fever / weakness,Gill Road,30.857574,75.84973,AMB-103,Available,9.3,15,DMCH,30.887,75.846,18,16,On the Way,"Trauma, Advanced Life Support"
+325,REQ-1325,2026-09-17 09:05:00,Medium,Cardiac emergency,Sarabha Nagar,30.893256,75.81421,AMB-109,Available,5.0,13,CityCare Hospital,30.912,75.851,1,3,Assigned,Basic Life Support
+326,REQ-1326,2026-09-17 10:00:00,High,Fever / weakness,Bharat Nagar Chowk,30.889608,75.849882,AMB-103,Available,8.6,18,Fortis Hospital,30.901,75.842,20,0,Arrived,"Cardiac, Oxygen"
+327,REQ-1327,2026-09-17 11:30:00,Medium,Unconscious patient,Haibowal,30.937684,75.874022,AMB-107,Available,8.3,17,Civil Hospital Ludhiana,30.92,75.85,16,19,Assigned,Basic Life Support
+328,REQ-1328,2026-09-17 12:20:00,Critical,Severe injury,Bus Stand,30.90327,75.865339,AMB-109,Available,2.3,7,DMCH,30.887,75.846,22,13,Arrived,"Advanced Life Support, Oxygen"
+329,REQ-1329,2026-09-17 13:10:00,High,Severe injury,Jagraon Bridge,30.917646,75.84942,AMB-104,Available,1.4,7,DMCH,30.887,75.846,2,3,Completed,"Trauma, Oxygen"
+330,REQ-1330,2026-09-17 14:10:00,Medium,Road accident,Dugri,30.878707,75.824039,AMB-105,Available,11.4,25,Fortis Hospital,30.901,75.842,9,8,Completed,Basic Life Support
+331,REQ-1331,2026-09-17 15:00:00,Critical,Cardiac emergency,Bharat Nagar Chowk,30.911467,75.853106,AMB-106,Available,2.1,4,CityCare Hospital,30.912,75.851,3,1,Assigned,"Cardiac, Oxygen"
+332,REQ-1332,2026-09-17 16:10:00,Critical,Chest pain,Ferozepur Road,30.895836,75.837653,AMB-105,Available,8.3,17,DMCH,30.887,75.846,11,10,On the Way,"Trauma, Oxygen"
+333,REQ-1333,2026-09-17 17:05:00,Low,Unconscious patient,Model Town,30.901071,75.840697,AMB-108,Available,5.4,16,Fortis Hospital,30.901,75.842,28,5,Assigned,"Oxygen, Basic Life Support"
+334,REQ-1334,2026-09-17 18:10:00,Critical,Breathing difficulty,Gill Road,30.860111,75.870337,AMB-108,Available,8.7,23,DMCH,30.887,75.846,14,5,Completed,"Trauma, Advanced Life Support"
+335,REQ-1335,2026-09-17 19:25:00,Low,Breathing difficulty,Sarabha Nagar,30.896492,75.809644,AMB-107,Available,7.7,13,CityCare Hospital,30.912,75.851,8,20,Arrived,Basic Life Support
+336,REQ-1336,2026-09-17 20:00:00,Medium,Severe injury,Bharat Nagar Chowk,30.915237,75.862395,AMB-106,Available,8.8,21,Fortis Hospital,30.901,75.842,22,19,Assigned,"Cardiac, Oxygen"
+337,REQ-1337,2026-09-17 07:30:00,High,Chest pain,Haibowal,30.938911,75.872242,AMB-103,Available,8.3,21,Civil Hospital Ludhiana,30.92,75.85,28,19,Assigned,Basic Life Support
+338,REQ-1338,2026-09-17 08:00:00,Critical,Abdominal pain,Bus Stand,30.910556,75.868082,AMB-102,Available,8.1,18,DMCH,30.887,75.846,7,10,Arrived,"Advanced Life Support, Oxygen"
+339,REQ-1339,2026-09-17 09:00:00,Medium,Fever / weakness,Jagraon Bridge,30.909098,75.84205,AMB-108,Available,6.6,16,DMCH,30.887,75.846,14,2,Completed,"Trauma, Oxygen"
+340,REQ-1340,2026-09-17 10:35:00,Low,Cardiac emergency,Dugri,30.860079,75.83337,AMB-109,Available,4.5,8,Fortis Hospital,30.901,75.842,25,19,Arrived,Basic Life Support
+341,REQ-1341,2026-09-18 11:40:00,Medium,Abdominal pain,Bharat Nagar Chowk,30.914411,75.8532,AMB-101,Available,7.2,18,CityCare Hospital,30.912,75.851,10,17,Completed,"Cardiac, Oxygen"
+342,REQ-1342,2026-09-18 12:55:00,Medium,Road accident,Ferozepur Road,30.871923,75.828767,AMB-101,Available,8.2,19,DMCH,30.887,75.846,30,9,Arrived,"Trauma, Oxygen"
+343,REQ-1343,2026-09-18 13:55:00,Low,Abdominal pain,Model Town,30.880213,75.841506,AMB-107,Available,2.2,7,Fortis Hospital,30.901,75.842,6,6,Assigned,"Oxygen, Basic Life Support"
+344,REQ-1344,2026-09-18 14:30:00,Medium,Severe injury,Gill Road,30.878504,75.846233,AMB-107,Available,3.4,10,DMCH,30.887,75.846,26,18,Assigned,"Trauma, Advanced Life Support"
+345,REQ-1345,2026-09-18 15:35:00,Medium,Breathing difficulty,Sarabha Nagar,30.910916,75.79513,AMB-101,Available,6.0,14,CityCare Hospital,30.912,75.851,26,18,Completed,Basic Life Support
+346,REQ-1346,2026-09-18 16:40:00,Low,Breathing difficulty,Bharat Nagar Chowk,30.907815,75.846151,AMB-107,Available,9.6,22,Fortis Hospital,30.901,75.842,28,10,Completed,"Cardiac, Oxygen"
+347,REQ-1347,2026-09-18 17:30:00,Low,Severe injury,Haibowal,30.927208,75.881908,AMB-105,Available,11.8,22,Civil Hospital Ludhiana,30.92,75.85,4,13,Arrived,Basic Life Support
+348,REQ-1348,2026-09-18 18:55:00,High,Severe injury,Bus Stand,30.891027,75.860725,AMB-105,Available,7.0,19,DMCH,30.887,75.846,4,20,On the Way,"Advanced Life Support, Oxygen"
+349,REQ-1349,2026-09-18 19:40:00,Medium,Road accident,Jagraon Bridge,30.919823,75.851868,AMB-110,Available,7.0,18,DMCH,30.887,75.846,22,13,Arrived,"Trauma, Oxygen"
+350,REQ-1350,2026-09-18 20:30:00,High,Cardiac emergency,Dugri,30.868426,75.822592,AMB-101,Available,9.9,16,Fortis Hospital,30.901,75.842,9,8,On the Way,Basic Life Support
+351,REQ-1351,2026-09-18 07:00:00,High,Cardiac emergency,Bharat Nagar Chowk,30.89666,75.855878,AMB-110,Available,8.6,23,CityCare Hospital,30.912,75.851,17,7,Completed,"Cardiac, Oxygen"
+352,REQ-1352,2026-09-18 08:15:00,Medium,Unconscious patient,Ferozepur Road,30.889788,75.810409,AMB-107,Available,6.6,16,DMCH,30.887,75.846,10,17,Assigned,"Trauma, Oxygen"
+353,REQ-1353,2026-09-18 09:00:00,High,Abdominal pain,Model Town,30.9009,75.847345,AMB-106,Available,9.2,22,Fortis Hospital,30.901,75.842,23,19,On the Way,"Oxygen, Basic Life Support"
+354,REQ-1354,2026-09-18 10:55:00,High,Breathing difficulty,Gill Road,30.886504,75.845234,AMB-103,Available,11.6,23,DMCH,30.887,75.846,12,1,Completed,"Trauma, Advanced Life Support"
+355,REQ-1355,2026-09-18 11:20:00,Critical,Unconscious patient,Sarabha Nagar,30.882169,75.80899,AMB-103,Available,7.1,12,CityCare Hospital,30.912,75.851,19,1,Arrived,Basic Life Support
+356,REQ-1356,2026-09-18 12:35:00,Medium,Road accident,Bharat Nagar Chowk,30.909421,75.851836,AMB-104,Available,9.7,25,Fortis Hospital,30.901,75.842,2,16,On the Way,"Cardiac, Oxygen"
+357,REQ-1357,2026-09-18 13:30:00,High,Chest pain,Haibowal,30.925636,75.859401,AMB-106,Available,7.0,14,Civil Hospital Ludhiana,30.92,75.85,6,19,Completed,Basic Life Support
+358,REQ-1358,2026-09-18 14:40:00,Low,Cardiac emergency,Bus Stand,30.888442,75.85238,AMB-104,Available,10.1,25,DMCH,30.887,75.846,29,19,On the Way,"Advanced Life Support, Oxygen"
+359,REQ-1359,2026-09-18 15:00:00,High,Road accident,Jagraon Bridge,30.908576,75.851207,AMB-105,Available,8.5,16,DMCH,30.887,75.846,26,11,Completed,"Trauma, Oxygen"
+360,REQ-1360,2026-09-18 16:35:00,Low,Severe injury,Dugri,30.866609,75.82347,AMB-102,Available,1.5,6,Fortis Hospital,30.901,75.842,17,0,Assigned,Basic Life Support
+361,REQ-1361,2026-09-19 17:15:00,Medium,Fever / weakness,Bharat Nagar Chowk,30.91097,75.848467,AMB-107,Available,8.4,16,CityCare Hospital,30.912,75.851,23,4,Assigned,"Cardiac, Oxygen"
+362,REQ-1362,2026-09-19 18:35:00,Critical,Road accident,Ferozepur Road,30.870628,75.832826,AMB-109,Available,8.9,14,DMCH,30.887,75.846,29,8,Completed,"Trauma, Oxygen"
+363,REQ-1363,2026-09-19 19:30:00,High,Chest pain,Model Town,30.876507,75.840199,AMB-109,Available,6.0,13,Fortis Hospital,30.901,75.842,19,2,Assigned,"Oxygen, Basic Life Support"
+364,REQ-1364,2026-09-19 20:55:00,High,Road accident,Gill Road,30.865695,75.863576,AMB-110,Available,10.3,18,DMCH,30.887,75.846,12,12,Assigned,"Trauma, Advanced Life Support"
+365,REQ-1365,2026-09-19 07:35:00,High,Fever / weakness,Sarabha Nagar,30.905903,75.820484,AMB-105,Available,2.7,7,CityCare Hospital,30.912,75.851,9,20,Arrived,Basic Life Support
+366,REQ-1366,2026-09-19 08:00:00,Medium,Road accident,Bharat Nagar Chowk,30.887153,75.859482,AMB-107,Available,7.1,13,Fortis Hospital,30.901,75.842,9,6,Arrived,"Cardiac, Oxygen"
+367,REQ-1367,2026-09-19 09:15:00,Medium,Breathing difficulty,Haibowal,30.923829,75.859624,AMB-105,Available,5.5,10,Civil Hospital Ludhiana,30.92,75.85,21,18,Assigned,Basic Life Support
+368,REQ-1368,2026-09-19 10:40:00,High,Unconscious patient,Bus Stand,30.905151,75.849521,AMB-104,Available,6.1,15,DMCH,30.887,75.846,30,10,Arrived,"Advanced Life Support, Oxygen"
+369,REQ-1369,2026-09-19 11:10:00,High,Unconscious patient,Jagraon Bridge,30.915585,75.862004,AMB-106,Available,8.4,17,DMCH,30.887,75.846,19,9,On the Way,"Trauma, Oxygen"
+370,REQ-1370,2026-09-19 12:45:00,Medium,Fever / weakness,Dugri,30.862059,75.830396,AMB-104,Available,7.2,19,Fortis Hospital,30.901,75.842,13,8,Arrived,Basic Life Support
+371,REQ-1371,2026-09-19 13:10:00,High,Abdominal pain,Bharat Nagar Chowk,30.899785,75.853062,AMB-105,Available,8.5,15,CityCare Hospital,30.912,75.851,5,20,Assigned,"Cardiac, Oxygen"
+372,REQ-1372,2026-09-19 14:20:00,Critical,Severe injury,Ferozepur Road,30.876897,75.83559,AMB-102,Available,10.4,21,DMCH,30.887,75.846,27,16,Assigned,"Trauma, Oxygen"
+373,REQ-1373,2026-09-19 15:45:00,Medium,Severe injury,Model Town,30.903189,75.836548,AMB-109,Available,7.4,20,Fortis Hospital,30.901,75.842,15,20,On the Way,"Oxygen, Basic Life Support"
+374,REQ-1374,2026-09-19 16:25:00,Low,Unconscious patient,Gill Road,30.861016,75.858034,AMB-102,Available,5.3,13,DMCH,30.887,75.846,0,7,On the Way,"Trauma, Advanced Life Support"
+375,REQ-1375,2026-09-19 17:40:00,Critical,Breathing difficulty,Sarabha Nagar,30.904078,75.809505,AMB-106,Available,2.5,7,CityCare Hospital,30.912,75.851,7,2,Arrived,Basic Life Support
+376,REQ-1376,2026-09-19 18:25:00,Medium,Chest pain,Bharat Nagar Chowk,30.897543,75.869837,AMB-101,Available,3.6,10,Fortis Hospital,30.901,75.842,10,3,Arrived,"Cardiac, Oxygen"
+377,REQ-1377,2026-09-19 19:55:00,High,Breathing difficulty,Haibowal,30.9303,75.864356,AMB-110,Available,3.9,7,Civil Hospital Ludhiana,30.92,75.85,16,8,Completed,Basic Life Support
+378,REQ-1378,2026-09-19 20:15:00,High,Chest pain,Bus Stand,30.899606,75.856463,AMB-110,Available,6.7,10,DMCH,30.887,75.846,14,5,On the Way,"Advanced Life Support, Oxygen"
+379,REQ-1379,2026-09-19 07:05:00,High,Breathing difficulty,Jagraon Bridge,30.902607,75.845867,AMB-102,Available,6.7,16,DMCH,30.887,75.846,25,10,Assigned,"Trauma, Oxygen"
+380,REQ-1380,2026-09-19 08:35:00,High,Breathing difficulty,Dugri,30.876418,75.833327,AMB-104,Available,8.4,16,Fortis Hospital,30.901,75.842,18,5,On the Way,Basic Life Support
+381,REQ-1381,2026-09-20 09:50:00,Low,Breathing difficulty,Bharat Nagar Chowk,30.887577,75.850048,AMB-103,Available,6.6,15,CityCare Hospital,30.912,75.851,19,18,Assigned,"Cardiac, Oxygen"
+382,REQ-1382,2026-09-20 10:55:00,Medium,Road accident,Ferozepur Road,30.875498,75.827196,AMB-108,Available,9.0,20,DMCH,30.887,75.846,7,13,On the Way,"Trauma, Oxygen"
+383,REQ-1383,2026-09-20 11:45:00,Critical,Unconscious patient,Model Town,30.881032,75.840568,AMB-108,Available,10.0,19,Fortis Hospital,30.901,75.842,7,12,Completed,"Oxygen, Basic Life Support"
+384,REQ-1384,2026-09-20 12:10:00,High,Fever / weakness,Gill Road,30.881795,75.861165,AMB-103,Available,2.2,8,DMCH,30.887,75.846,19,1,Assigned,"Trauma, Advanced Life Support"
+385,REQ-1385,2026-09-20 13:05:00,Critical,Cardiac emergency,Sarabha Nagar,30.908909,75.818246,AMB-107,Available,6.3,13,CityCare Hospital,30.912,75.851,27,1,Completed,Basic Life Support
+386,REQ-1386,2026-09-20 14:15:00,High,Fever / weakness,Bharat Nagar Chowk,30.896416,75.866439,AMB-110,Available,11.3,18,Fortis Hospital,30.901,75.842,8,15,On the Way,"Cardiac, Oxygen"
+387,REQ-1387,2026-09-20 15:05:00,Low,Fever / weakness,Haibowal,30.926734,75.853164,AMB-101,Available,4.1,8,Civil Hospital Ludhiana,30.92,75.85,16,0,Completed,Basic Life Support
+388,REQ-1388,2026-09-20 16:50:00,Medium,Fever / weakness,Bus Stand,30.895868,75.846643,AMB-110,Available,3.3,9,DMCH,30.887,75.846,13,18,Arrived,"Advanced Life Support, Oxygen"
+389,REQ-1389,2026-09-20 17:45:00,Medium,Severe injury,Jagraon Bridge,30.909397,75.858514,AMB-108,Available,4.0,10,DMCH,30.887,75.846,17,15,Arrived,"Trauma, Oxygen"
+390,REQ-1390,2026-09-20 18:20:00,Medium,Fever / weakness,Dugri,30.879073,75.84665,AMB-102,Available,7.4,18,Fortis Hospital,30.901,75.842,25,5,Assigned,Basic Life Support
+391,REQ-1391,2026-09-20 19:15:00,Medium,Cardiac emergency,Bharat Nagar Chowk,30.890722,75.871237,AMB-101,Available,6.6,14,CityCare Hospital,30.912,75.851,15,19,Completed,"Cardiac, Oxygen"
+392,REQ-1392,2026-09-20 20:05:00,High,Road accident,Ferozepur Road,30.887271,75.830735,AMB-107,Available,1.7,7,DMCH,30.887,75.846,9,19,Assigned,"Trauma, Oxygen"
+393,REQ-1393,2026-09-20 07:10:00,High,Severe injury,Model Town,30.901517,75.847923,AMB-109,Available,8.0,13,Fortis Hospital,30.901,75.842,25,19,On the Way,"Oxygen, Basic Life Support"
+394,REQ-1394,2026-09-20 08:45:00,Critical,Severe injury,Gill Road,30.876651,75.872269,AMB-102,Available,2.9,9,DMCH,30.887,75.846,11,12,Completed,"Trauma, Advanced Life Support"
+395,REQ-1395,2026-09-20 09:45:00,Critical,Road accident,Sarabha Nagar,30.909575,75.811488,AMB-109,Available,3.2,9,CityCare Hospital,30.912,75.851,11,8,On the Way,Basic Life Support
+396,REQ-1396,2026-09-20 10:45:00,High,Fever / weakness,Bharat Nagar Chowk,30.903147,75.850133,AMB-107,Available,11.6,25,Fortis Hospital,30.901,75.842,2,16,Arrived,"Cardiac, Oxygen"
+397,REQ-1397,2026-09-20 11:25:00,Medium,Unconscious patient,Haibowal,30.945283,75.877394,AMB-110,Available,11.4,21,Civil Hospital Ludhiana,30.92,75.85,30,12,Completed,Basic Life Support
+398,REQ-1398,2026-09-20 12:15:00,Low,Abdominal pain,Bus Stand,30.905448,75.868896,AMB-101,Available,9.3,19,DMCH,30.887,75.846,2,12,On the Way,"Advanced Life Support, Oxygen"
+399,REQ-1399,2026-09-20 13:50:00,Medium,Fever / weakness,Jagraon Bridge,30.925663,75.850495,AMB-101,Available,8.7,19,DMCH,30.887,75.846,7,9,Assigned,"Trauma, Oxygen"
+400,REQ-1400,2026-09-20 14:30:00,Medium,Road accident,Dugri,30.873637,75.826355,AMB-106,Available,8.4,18,Fortis Hospital,30.901,75.842,8,5,On the Way,Basic Life Support
+401,REQ-1401,2026-09-21 15:35:00,High,Severe injury,Bharat Nagar Chowk,30.912082,75.848503,AMB-104,Available,9.1,23,CityCare Hospital,30.912,75.851,11,4,Assigned,"Cardiac, Oxygen"
+402,REQ-1402,2026-09-21 16:05:00,Medium,Abdominal pain,Ferozepur Road,30.887415,75.831927,AMB-109,Available,11.1,27,DMCH,30.887,75.846,11,19,Arrived,"Trauma, Oxygen"
+403,REQ-1403,2026-09-21 17:35:00,Low,Unconscious patient,Model Town,30.890724,75.849532,AMB-109,Available,10.9,19,Fortis Hospital,30.901,75.842,24,18,On the Way,"Oxygen, Basic Life Support"
+404,REQ-1404,2026-09-21 18:00:00,High,Cardiac emergency,Gill Road,30.872074,75.854812,AMB-103,Available,6.8,12,DMCH,30.887,75.846,22,16,Completed,"Trauma, Advanced Life Support"
+405,REQ-1405,2026-09-21 19:25:00,Critical,Severe injury,Sarabha Nagar,30.893383,75.798022,AMB-106,Available,8.6,18,CityCare Hospital,30.912,75.851,5,17,Arrived,Basic Life Support
+406,REQ-1406,2026-09-21 20:15:00,Low,Chest pain,Bharat Nagar Chowk,30.896878,75.857263,AMB-104,Available,4.0,9,Fortis Hospital,30.901,75.842,11,12,Arrived,"Cardiac, Oxygen"
+407,REQ-1407,2026-09-21 07:35:00,Critical,Severe injury,Haibowal,30.943426,75.874624,AMB-104,Available,3.0,9,Civil Hospital Ludhiana,30.92,75.85,6,4,On the Way,Basic Life Support
+408,REQ-1408,2026-09-21 08:35:00,Critical,Abdominal pain,Bus Stand,30.889034,75.868798,AMB-109,Available,9.9,20,DMCH,30.887,75.846,25,15,Arrived,"Advanced Life Support, Oxygen"
+409,REQ-1409,2026-09-21 09:20:00,Medium,Fever / weakness,Jagraon Bridge,30.899969,75.8399,AMB-104,Available,7.2,18,DMCH,30.887,75.846,26,20,Assigned,"Trauma, Oxygen"
+410,REQ-1410,2026-09-21 10:35:00,High,Chest pain,Dugri,30.873811,75.848955,AMB-105,Available,9.2,18,Fortis Hospital,30.901,75.842,3,11,On the Way,Basic Life Support
+411,REQ-1411,2026-09-21 11:45:00,Medium,Breathing difficulty,Bharat Nagar Chowk,30.915281,75.850838,AMB-106,Available,7.3,17,CityCare Hospital,30.912,75.851,24,14,Assigned,"Cardiac, Oxygen"
+412,REQ-1412,2026-09-21 12:30:00,High,Breathing difficulty,Ferozepur Road,30.895048,75.828217,AMB-106,Available,7.8,18,DMCH,30.887,75.846,18,12,Assigned,"Trauma, Oxygen"
+413,REQ-1413,2026-09-21 13:05:00,High,Chest pain,Model Town,30.89559,75.841313,AMB-110,Available,2.8,7,Fortis Hospital,30.901,75.842,28,14,Arrived,"Oxygen, Basic Life Support"
+414,REQ-1414,2026-09-21 14:55:00,Low,Fever / weakness,Gill Road,30.86202,75.868626,AMB-103,Available,7.5,20,DMCH,30.887,75.846,8,2,On the Way,"Trauma, Advanced Life Support"
+415,REQ-1415,2026-09-21 15:10:00,Critical,Abdominal pain,Sarabha Nagar,30.898453,75.795791,AMB-107,Available,5.4,10,CityCare Hospital,30.912,75.851,3,8,On the Way,Basic Life Support
+416,REQ-1416,2026-09-21 16:05:00,Low,Unconscious patient,Bharat Nagar Chowk,30.892781,75.864428,AMB-108,Available,8.2,17,Fortis Hospital,30.901,75.842,16,5,Assigned,"Cardiac, Oxygen"
+417,REQ-1417,2026-09-21 17:00:00,Low,Chest pain,Haibowal,30.944927,75.867016,AMB-109,Available,8.3,22,Civil Hospital Ludhiana,30.92,75.85,14,4,On the Way,Basic Life Support
+418,REQ-1418,2026-09-21 18:45:00,Medium,Fever / weakness,Bus Stand,30.900704,75.861186,AMB-105,Available,7.6,19,DMCH,30.887,75.846,17,7,Assigned,"Advanced Life Support, Oxygen"
+419,REQ-1419,2026-09-21 19:35:00,High,Breathing difficulty,Jagraon Bridge,30.906107,75.835003,AMB-103,Available,4.4,10,DMCH,30.887,75.846,17,0,Completed,"Trauma, Oxygen"
+420,REQ-1420,2026-09-21 20:35:00,Medium,Unconscious patient,Dugri,30.87491,75.844903,AMB-109,Available,4.3,10,Fortis Hospital,30.901,75.842,28,17,Completed,Basic Life Support
+421,REQ-1421,2026-09-22 07:30:00,Medium,Fever / weakness,Bharat Nagar Chowk,30.910753,75.848918,AMB-102,Available,3.7,7,CityCare Hospital,30.912,75.851,16,19,Arrived,"Cardiac, Oxygen"
+422,REQ-1422,2026-09-22 08:20:00,High,Unconscious patient,Ferozepur Road,30.881387,75.834604,AMB-103,Available,8.1,12,DMCH,30.887,75.846,20,14,Completed,"Trauma, Oxygen"
+423,REQ-1423,2026-09-22 09:20:00,High,Chest pain,Model Town,30.876582,75.821489,AMB-109,Available,8.7,12,Fortis Hospital,30.901,75.842,9,8,On the Way,"Oxygen, Basic Life Support"
+424,REQ-1424,2026-09-22 10:55:00,Critical,Road accident,Gill Road,30.861521,75.857807,AMB-106,Available,5.8,13,DMCH,30.887,75.846,11,14,Assigned,"Trauma, Advanced Life Support"
+425,REQ-1425,2026-09-22 11:25:00,Medium,Breathing difficulty,Sarabha Nagar,30.883681,75.81827,AMB-102,Available,1.9,4,CityCare Hospital,30.912,75.851,6,8,Completed,Basic Life Support
+426,REQ-1426,2026-09-22 12:00:00,Medium,Severe injury,Bharat Nagar Chowk,30.897444,75.871549,AMB-104,Available,2.3,5,Fortis Hospital,30.901,75.842,6,14,Assigned,"Cardiac, Oxygen"
+427,REQ-1427,2026-09-22 13:40:00,High,Fever / weakness,Haibowal,30.939443,75.862363,AMB-106,Available,8.3,18,Civil Hospital Ludhiana,30.92,75.85,1,17,Assigned,Basic Life Support
+428,REQ-1428,2026-09-22 14:20:00,High,Chest pain,Bus Stand,30.911626,75.86791,AMB-104,Available,6.3,15,DMCH,30.887,75.846,20,13,Arrived,"Advanced Life Support, Oxygen"
+429,REQ-1429,2026-09-22 15:00:00,High,Road accident,Jagraon Bridge,30.908874,75.842293,AMB-101,Available,2.8,10,DMCH,30.887,75.846,15,19,On the Way,"Trauma, Oxygen"
+430,REQ-1430,2026-09-22 16:25:00,High,Abdominal pain,Dugri,30.859742,75.839559,AMB-101,Available,9.5,19,Fortis Hospital,30.901,75.842,4,17,Assigned,Basic Life Support
+431,REQ-1431,2026-09-22 17:10:00,High,Chest pain,Bharat Nagar Chowk,30.910066,75.855462,AMB-104,Available,6.4,12,CityCare Hospital,30.912,75.851,11,4,Arrived,"Cardiac, Oxygen"
+432,REQ-1432,2026-09-22 18:00:00,High,Unconscious patient,Ferozepur Road,30.885282,75.823703,AMB-110,Available,6.3,12,DMCH,30.887,75.846,10,14,Arrived,"Trauma, Oxygen"
+433,REQ-1433,2026-09-22 19:45:00,Medium,Road accident,Model Town,30.891934,75.833482,AMB-105,Available,11.1,23,Fortis Hospital,30.901,75.842,0,20,Completed,"Oxygen, Basic Life Support"
+434,REQ-1434,2026-09-22 20:55:00,Critical,Chest pain,Gill Road,30.88028,75.850164,AMB-102,Available,3.0,10,DMCH,30.887,75.846,26,12,On the Way,"Trauma, Advanced Life Support"
+435,REQ-1435,2026-09-22 07:40:00,Medium,Breathing difficulty,Sarabha Nagar,30.900391,75.804678,AMB-106,Available,8.5,17,CityCare Hospital,30.912,75.851,21,2,Assigned,Basic Life Support
+436,REQ-1436,2026-09-22 08:10:00,Critical,Road accident,Bharat Nagar Chowk,30.900461,75.845263,AMB-110,Available,3.0,9,Fortis Hospital,30.901,75.842,21,15,Arrived,"Cardiac, Oxygen"
+437,REQ-1437,2026-09-22 09:00:00,Medium,Road accident,Haibowal,30.919393,75.880631,AMB-108,Available,5.0,11,Civil Hospital Ludhiana,30.92,75.85,14,20,Assigned,Basic Life Support
+438,REQ-1438,2026-09-22 10:25:00,Low,Fever / weakness,Bus Stand,30.909661,75.865827,AMB-101,Available,7.1,17,DMCH,30.887,75.846,16,1,Assigned,"Advanced Life Support, Oxygen"
+439,REQ-1439,2026-09-22 11:20:00,High,Road accident,Jagraon Bridge,30.900037,75.841931,AMB-107,Available,1.9,7,DMCH,30.887,75.846,21,7,On the Way,"Trauma, Oxygen"
+440,REQ-1440,2026-09-22 12:40:00,High,Road accident,Dugri,30.879989,75.838297,AMB-108,Available,9.2,21,Fortis Hospital,30.901,75.842,28,3,On the Way,Basic Life Support
+441,REQ-1441,2026-09-23 13:10:00,High,Breathing difficulty,Bharat Nagar Chowk,30.901917,75.860297,AMB-106,Available,7.0,19,CityCare Hospital,30.912,75.851,10,11,Completed,"Cardiac, Oxygen"
+442,REQ-1442,2026-09-23 14:50:00,Medium,Severe injury,Ferozepur Road,30.885894,75.815418,AMB-109,Available,5.7,14,DMCH,30.887,75.846,11,14,Completed,"Trauma, Oxygen"
+443,REQ-1443,2026-09-23 15:30:00,Critical,Unconscious patient,Model Town,30.893873,75.835528,AMB-105,Available,1.0,3,Fortis Hospital,30.901,75.842,6,10,Assigned,"Oxygen, Basic Life Support"
+444,REQ-1444,2026-09-23 16:55:00,Low,Breathing difficulty,Gill Road,30.859829,75.856811,AMB-103,Available,10.0,17,DMCH,30.887,75.846,28,18,On the Way,"Trauma, Advanced Life Support"
+445,REQ-1445,2026-09-23 17:15:00,High,Fever / weakness,Sarabha Nagar,30.899072,75.801523,AMB-102,Available,3.8,11,CityCare Hospital,30.912,75.851,5,15,Assigned,Basic Life Support
+446,REQ-1446,2026-09-23 18:45:00,Critical,Fever / weakness,Bharat Nagar Chowk,30.888254,75.843978,AMB-106,Available,8.1,17,Fortis Hospital,30.901,75.842,13,3,On the Way,"Cardiac, Oxygen"
+447,REQ-1447,2026-09-23 19:55:00,Medium,Cardiac emergency,Haibowal,30.938017,75.871966,AMB-101,Available,8.2,13,Civil Hospital Ludhiana,30.92,75.85,10,17,On the Way,Basic Life Support
+448,REQ-1448,2026-09-23 20:25:00,High,Cardiac emergency,Bus Stand,30.905209,75.871921,AMB-108,Available,6.5,17,DMCH,30.887,75.846,16,2,On the Way,"Advanced Life Support, Oxygen"
+449,REQ-1449,2026-09-23 07:30:00,High,Breathing difficulty,Jagraon Bridge,30.907085,75.849276,AMB-101,Available,4.2,10,DMCH,30.887,75.846,2,12,Completed,"Trauma, Oxygen"
+450,REQ-1450,2026-09-23 08:55:00,Critical,Severe injury,Dugri,30.871636,75.840567,AMB-104,Available,2.4,9,Fortis Hospital,30.901,75.842,16,7,On the Way,Basic Life Support
+451,REQ-1451,2026-09-23 09:05:00,High,Road accident,Bharat Nagar Chowk,30.889276,75.854707,AMB-106,Available,3.9,9,CityCare Hospital,30.912,75.851,11,19,Assigned,"Cardiac, Oxygen"
+452,REQ-1452,2026-09-23 10:20:00,High,Abdominal pain,Ferozepur Road,30.887695,75.822214,AMB-104,Available,2.9,7,DMCH,30.887,75.846,4,2,Assigned,"Trauma, Oxygen"
+453,REQ-1453,2026-09-23 11:55:00,Low,Breathing difficulty,Model Town,30.902063,75.844604,AMB-101,Available,1.6,3,Fortis Hospital,30.901,75.842,9,14,Completed,"Oxygen, Basic Life Support"
+454,REQ-1454,2026-09-23 12:00:00,Medium,Severe injury,Gill Road,30.863114,75.858698,AMB-105,Available,4.7,13,DMCH,30.887,75.846,23,4,Assigned,"Trauma, Advanced Life Support"
+455,REQ-1455,2026-09-23 13:30:00,Medium,Cardiac emergency,Sarabha Nagar,30.889664,75.796803,AMB-104,Available,7.4,19,CityCare Hospital,30.912,75.851,8,1,Completed,Basic Life Support
+456,REQ-1456,2026-09-23 14:50:00,Critical,Unconscious patient,Bharat Nagar Chowk,30.905789,75.869686,AMB-106,Available,11.4,24,Fortis Hospital,30.901,75.842,9,20,Completed,"Cardiac, Oxygen"
+457,REQ-1457,2026-09-23 15:15:00,High,Road accident,Haibowal,30.946116,75.86754,AMB-110,Available,11.8,23,Civil Hospital Ludhiana,30.92,75.85,6,16,Completed,Basic Life Support
+458,REQ-1458,2026-09-23 16:40:00,Critical,Severe injury,Bus Stand,30.912668,75.851148,AMB-108,Available,11.2,20,DMCH,30.887,75.846,0,11,Arrived,"Advanced Life Support, Oxygen"
+459,REQ-1459,2026-09-23 17:25:00,High,Unconscious patient,Jagraon Bridge,30.921357,75.853774,AMB-107,Available,7.9,17,DMCH,30.887,75.846,30,17,Arrived,"Trauma, Oxygen"
+460,REQ-1460,2026-09-23 18:15:00,Low,Breathing difficulty,Dugri,30.859634,75.832466,AMB-110,Available,2.7,11,Fortis Hospital,30.901,75.842,7,13,On the Way,Basic Life Support
+461,REQ-1461,2026-09-24 19:45:00,Low,Chest pain,Bharat Nagar Chowk,30.899375,75.846253,AMB-103,Available,2.7,10,CityCare Hospital,30.912,75.851,25,6,On the Way,"Cardiac, Oxygen"
+462,REQ-1462,2026-09-24 20:20:00,Low,Breathing difficulty,Ferozepur Road,30.881902,75.83627,AMB-103,Available,8.6,21,DMCH,30.887,75.846,29,5,Arrived,"Trauma, Oxygen"
+463,REQ-1463,2026-09-24 07:05:00,Low,Road accident,Model Town,30.881524,75.845186,AMB-103,Available,7.1,16,Fortis Hospital,30.901,75.842,28,13,Completed,"Oxygen, Basic Life Support"
+464,REQ-1464,2026-09-24 08:20:00,Low,Unconscious patient,Gill Road,30.861559,75.848638,AMB-103,Available,5.9,13,DMCH,30.887,75.846,19,8,On the Way,"Trauma, Advanced Life Support"
+465,REQ-1465,2026-09-24 09:45:00,Medium,Chest pain,Sarabha Nagar,30.884384,75.818395,AMB-103,Available,3.6,10,CityCare Hospital,30.912,75.851,15,20,Arrived,Basic Life Support
+466,REQ-1466,2026-09-24 10:10:00,High,Breathing difficulty,Bharat Nagar Chowk,30.890814,75.849088,AMB-107,Available,10.4,21,Fortis Hospital,30.901,75.842,29,8,Completed,"Cardiac, Oxygen"
+467,REQ-1467,2026-09-24 11:15:00,Low,Severe injury,Haibowal,30.920984,75.880813,AMB-108,Available,9.2,22,Civil Hospital Ludhiana,30.92,75.85,22,10,Completed,Basic Life Support
+468,REQ-1468,2026-09-24 12:15:00,Medium,Fever / weakness,Bus Stand,30.906606,75.853825,AMB-110,Available,5.7,15,DMCH,30.887,75.846,20,1,Assigned,"Advanced Life Support, Oxygen"
+469,REQ-1469,2026-09-24 13:35:00,Low,Severe injury,Jagraon Bridge,30.912561,75.846868,AMB-101,Available,6.0,15,DMCH,30.887,75.846,24,20,Assigned,"Trauma, Oxygen"
+470,REQ-1470,2026-09-24 14:15:00,High,Unconscious patient,Dugri,30.88021,75.829577,AMB-103,Available,4.2,11,Fortis Hospital,30.901,75.842,29,1,On the Way,Basic Life Support
+471,REQ-1471,2026-09-24 15:35:00,High,Road accident,Bharat Nagar Chowk,30.891293,75.859863,AMB-109,Available,10.1,18,CityCare Hospital,30.912,75.851,10,14,Assigned,"Cardiac, Oxygen"
+472,REQ-1472,2026-09-24 16:10:00,Low,Severe injury,Ferozepur Road,30.895476,75.811705,AMB-106,Available,6.0,17,DMCH,30.887,75.846,25,5,Assigned,"Trauma, Oxygen"
+473,REQ-1473,2026-09-24 17:05:00,High,Chest pain,Model Town,30.878559,75.841218,AMB-109,Available,2.3,5,Fortis Hospital,30.901,75.842,12,17,Completed,"Oxygen, Basic Life Support"
+474,REQ-1474,2026-09-24 18:00:00,Low,Breathing difficulty,Gill Road,30.861864,75.847338,AMB-101,Available,9.5,18,DMCH,30.887,75.846,23,14,Arrived,"Trauma, Advanced Life Support"
+475,REQ-1475,2026-09-24 19:50:00,Low,Severe injury,Sarabha Nagar,30.882106,75.817962,AMB-101,Available,3.0,8,CityCare Hospital,30.912,75.851,17,0,Completed,Basic Life Support
+476,REQ-1476,2026-09-24 20:15:00,Medium,Abdominal pain,Bharat Nagar Chowk,30.898205,75.844682,AMB-110,Available,3.4,9,Fortis Hospital,30.901,75.842,8,19,On the Way,"Cardiac, Oxygen"
+477,REQ-1477,2026-09-24 07:00:00,Critical,Chest pain,Haibowal,30.920102,75.878615,AMB-110,Available,3.0,8,Civil Hospital Ludhiana,30.92,75.85,10,2,Assigned,Basic Life Support
+478,REQ-1478,2026-09-24 08:05:00,Critical,Unconscious patient,Bus Stand,30.903333,75.862745,AMB-110,Available,5.6,14,DMCH,30.887,75.846,5,14,Arrived,"Advanced Life Support, Oxygen"
+479,REQ-1479,2026-09-24 09:00:00,High,Chest pain,Jagraon Bridge,30.923926,75.859608,AMB-107,Available,2.0,4,DMCH,30.887,75.846,9,15,On the Way,"Trauma, Oxygen"
+480,REQ-1480,2026-09-24 10:05:00,High,Fever / weakness,Dugri,30.872739,75.841875,AMB-110,Available,8.6,16,Fortis Hospital,30.901,75.842,23,20,Assigned,Basic Life Support
+481,REQ-1481,2026-09-25 11:35:00,Medium,Unconscious patient,Bharat Nagar Chowk,30.898712,75.867734,AMB-105,Available,9.0,20,CityCare Hospital,30.912,75.851,11,4,Completed,"Cardiac, Oxygen"
+482,REQ-1482,2026-09-25 12:40:00,High,Breathing difficulty,Ferozepur Road,30.89551,75.815982,AMB-105,Available,9.0,20,DMCH,30.887,75.846,3,0,Completed,"Trauma, Oxygen"
+483,REQ-1483,2026-09-25 13:50:00,Medium,Severe injury,Model Town,30.899987,75.84997,AMB-107,Available,9.8,16,Fortis Hospital,30.901,75.842,17,20,On the Way,"Oxygen, Basic Life Support"
+484,REQ-1484,2026-09-25 14:00:00,Medium,Unconscious patient,Gill Road,30.880706,75.852233,AMB-109,Available,8.0,15,DMCH,30.887,75.846,3,10,Arrived,"Trauma, Advanced Life Support"
+485,REQ-1485,2026-09-25 15:30:00,Medium,Cardiac emergency,Sarabha Nagar,30.906961,75.80082,AMB-106,Available,9.0,22,CityCare Hospital,30.912,75.851,29,15,Assigned,Basic Life Support
+486,REQ-1486,2026-09-25 16:50:00,Critical,Abdominal pain,Bharat Nagar Chowk,30.912662,75.858409,AMB-106,Available,2.5,7,Fortis Hospital,30.901,75.842,29,1,Arrived,"Cardiac, Oxygen"
+487,REQ-1487,2026-09-25 17:45:00,High,Cardiac emergency,Haibowal,30.925248,75.873565,AMB-106,Available,9.0,14,Civil Hospital Ludhiana,30.92,75.85,8,0,Arrived,Basic Life Support
+488,REQ-1488,2026-09-25 18:30:00,Medium,Fever / weakness,Bus Stand,30.890621,75.845505,AMB-105,Available,7.9,18,DMCH,30.887,75.846,22,1,Arrived,"Advanced Life Support, Oxygen"
+489,REQ-1489,2026-09-25 19:30:00,Low,Chest pain,Jagraon Bridge,30.910557,75.863522,AMB-104,Available,2.0,5,DMCH,30.887,75.846,3,11,Assigned,"Trauma, Oxygen"
+490,REQ-1490,2026-09-25 20:15:00,High,Cardiac emergency,Dugri,30.880971,75.848149,AMB-103,Available,11.0,20,Fortis Hospital,30.901,75.842,23,16,Arrived,Basic Life Support
+491,REQ-1491,2026-09-25 07:25:00,Low,Breathing difficulty,Bharat Nagar Chowk,30.892056,75.843397,AMB-107,Available,2.6,9,CityCare Hospital,30.912,75.851,3,0,Arrived,"Cardiac, Oxygen"
+492,REQ-1492,2026-09-25 08:00:00,Medium,Road accident,Ferozepur Road,30.878999,75.835676,AMB-102,Available,8.6,21,DMCH,30.887,75.846,23,9,Assigned,"Trauma, Oxygen"
+493,REQ-1493,2026-09-25 09:45:00,Medium,Severe injury,Model Town,30.885626,75.825776,AMB-105,Available,9.3,20,Fortis Hospital,30.901,75.842,21,3,Arrived,"Oxygen, Basic Life Support"
+494,REQ-1494,2026-09-25 10:10:00,Critical,Road accident,Gill Road,30.863197,75.85351,AMB-106,Available,2.7,9,DMCH,30.887,75.846,25,9,On the Way,"Trauma, Advanced Life Support"
+495,REQ-1495,2026-09-25 11:10:00,Medium,Chest pain,Sarabha Nagar,30.898217,75.796522,AMB-101,Available,1.8,8,CityCare Hospital,30.912,75.851,1,3,Completed,Basic Life Support
+496,REQ-1496,2026-09-25 12:00:00,High,Abdominal pain,Bharat Nagar Chowk,30.904389,75.851673,AMB-104,Available,1.9,9,Fortis Hospital,30.901,75.842,25,17,Assigned,"Cardiac, Oxygen"
+497,REQ-1497,2026-09-25 13:35:00,Critical,Abdominal pain,Haibowal,30.921918,75.862312,AMB-108,Available,7.2,14,Civil Hospital Ludhiana,30.92,75.85,4,19,Arrived,Basic Life Support
+498,REQ-1498,2026-09-25 14:25:00,Medium,Chest pain,Bus Stand,30.908663,75.868472,AMB-108,Available,5.3,9,DMCH,30.887,75.846,15,3,Arrived,"Advanced Life Support, Oxygen"
+499,REQ-1499,2026-09-25 15:35:00,Critical,Chest pain,Jagraon Bridge,30.915133,75.838822,AMB-102,Available,6.1,16,DMCH,30.887,75.846,25,3,Arrived,"Trauma, Oxygen"
+500,REQ-1500,2026-09-25 16:40:00,Medium,Abdominal pain,Dugri,30.869024,75.833403,AMB-110,Available,8.1,14,Fortis Hospital,30.901,75.842,15,12,Assigned,Basic Life Support

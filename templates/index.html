@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart Ambulance Dispatch System - Intelligent AI & Flask powered emergency platform.">
+  <title>Smart Ambulance Dispatch System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-mark">✦</span><span class="brand-text"><span class="brand-main">SMART</span><span class="brand-accent">DISPATCH</span></span></div>
+      <div class="system-status"><small id="systemModeTag">Monitoring</small></div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <a href="#home" class="nav-link active" data-view="home"><span>⌂</span>Home</a>
+        <a href="#dispatch" class="nav-link" data-view="dispatch"><span>✚</span>Dispatch</a>
+        <a href="#dashboard" class="nav-link" data-view="dashboard"><span>◈</span>Live Dashboard</a>
+        <a href="#ambulances" class="nav-link" data-view="ambulances"><span>▣</span>Ambulances</a>
+        <a href="#hospitals" class="nav-link" data-view="hospitals"><span>⌂</span>Hospitals</a>
+        <a href="#analytics" class="nav-link" data-view="analytics"><span>▥</span>Analytics</a>
+      </nav>
+      <div class="sidebar-footer" id="sidebarUserFooter">
+        <div class="operator-avatar" id="userAvatar">OP</div>
+        <div>
+          <strong id="userName">Dispatch Operator</strong>
+          <span id="userRole"></span>
+        </div>
+        <button class="icon-btn" id="authBtn" aria-label="Account / Login" title="Login or Switch Account">👤</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb"><span>Control center</span><b>/</b><strong id="pageTitle">Home</strong><span class="header-datetime" id="headerDateTime"></span></div>
+        <div class="topbar-actions">
+          <button class="icon-btn notification" id="notifBellBtn" aria-label="Notifications">
+            ♢<i id="notifBadge" style="display:none;"></i>
+          </button>
+          <button class="emergency-btn" data-open-modal><span>!</span> Emergency Request</button>
+        </div>
+      </header>
+
+      <div class="view-container">
+        <!-- HOME VIEW -->
+        <section class="view active" id="home">
+          <div class="home-hero">
+            <div>
+              <span class="eyebrow">Emergency Operations Platform <span class="live-pill">Monitoring</span></span>
+              <h1>Smart Ambulance<br><em>Dispatch System</em></h1>
+              <p>Intelligent emergency response platform that selects the optimal available ambulance, factors traffic bottlenecks, and matches receiving hospital capabilities using real-time Python Flask logic.</p>
+              <div class="hero-actions">
+                <button class="primary-btn" data-view-target="dispatch">Request Emergency Assistance <span>→</span></button>
+                <button class="text-btn" data-view-target="dashboard">Open Operations Dashboard <span>↗</span></button>
+              </div>
+            </div>
+            <div class="hero-snapshot" id="heroSnapshotContainer">
+              <div class="snapshot-head"><span>Dispatch Snapshot</span><span class="sync-label"><i></i> Real-Time DB</span></div>
+              <div class="snapshot-route" id="snapshotRouteWrap">
+                <div class="route-line"><span class="route-marker emergency-marker">!</span><span></span><span class="route-marker hospital-marker">+</span></div>
+                <div><strong id="heroReqId">Checking active emergencies...</strong><p id="heroRouteText">System querying SQLite database</p><small class="snapshot-datetime" id="heroDateTime"></small></div>
+              </div>
+              <div class="snapshot-meta" id="snapshotMetaWrap">
+                <div><small>Assigned Unit</small><strong id="heroAmbNum">--</strong></div>
+                <div><small>ETA</small><strong class="green-text" id="heroEtaText">-- min</strong></div>
+                <div><small>Priority</small><strong class="red-text" id="heroPriorityText">--</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="metric-grid">
+            <div class="metric-card"><span class="metric-icon blue">▣</span><div><small>Available ambulances</small><strong id="metricAvailAmb">-- <b>/ --</b></strong><span class="metric-note green-text" id="metricFleetNote">Syncing SQLite fleet...</span></div></div>
+            <div class="metric-card"><span class="metric-icon red">!</span><div><small>Active emergencies</small><strong id="metricActiveEmerg">--</strong><span class="metric-note red-text" id="metricCritCount">0 critical cases</span></div></div>
+            <div class="metric-card"><span class="metric-icon orange">◷</span><div><small>Average ETA</small><strong id="metricAvgEta">--</strong><span class="metric-note green-text" id="metricEtaNote">Waiting for active routes...</span></div></div>
+            <div class="metric-card"><span class="metric-icon green">+</span><div><small>Hospitals available</small><strong id="metricAvailHosp">-- <b>/ --</b></strong><span class="metric-note" id="metricIcuHosp">Emergency ready</span></div></div>
+          </div>
+
+          <div class="section-heading"><div><span class="eyebrow">Decision pipeline</span><h2>How smart dispatch works</h2></div></div>
+          <div class="workflow-strip">
+            <div class="workflow-step"><span>01</span><div><strong>Emergency received</strong><small>Capture caller and location details</small></div></div>
+            <div class="workflow-step"><span>02</span><div><strong>Priority analysed</strong><small>Symptoms and severity assessed</small></div></div>
+            <div class="workflow-step"><span>03</span><div><strong>Best ambulance selected</strong><small>Haversine distance & traffic delay</small></div></div>
+            <div class="workflow-step"><span>04</span><div><strong>Hospital recommended</strong><small>Match care needs & beds</small></div></div>
+          </div>
+
+          <div class="section-heading"><div><span class="eyebrow">Core intelligence</span><h2>Smart dispatch features</h2></div></div>
+          <div class="feature-grid">
+            <article class="feature-card"><span class="feature-tag">Allocation</span><h3>Smart Ambulance Allocation</h3><p>Selects the most suitable available ambulance using ETA, traffic, equipment and area coverage.</p></article>
+            <article class="feature-card"><span class="feature-tag">NLP</span><h3>NLP Emergency Analysis</h3><p>Analyzes caller descriptions to identify emergency types, symptoms, and priority levels.</p></article>
+            <article class="feature-card"><span class="feature-tag">Routing</span><h3>Traffic-Aware Routing</h3><p>Checks traffic-prone areas in SQLite and adjusts travel time with alternative routes.</p></article>
+            <article class="feature-card"><span class="feature-tag">Hospital</span><h3>Hospital Recommendation</h3><p>Suggests receiving hospitals based on emergency capability, cardiology, ICU, and beds.</p></article>
+            <article class="feature-card"><span class="feature-tag">Notifications</span><h3>Hospital Alerts</h3><p>Sends real-time notifications to hospital dashboards upon ambulance assignment.</p></article>
+            <article class="feature-card"><span class="feature-tag">Tracking</span><h3>GPS Tracking Simulation</h3><p>Provides live ambulance tracking and step-by-step movement updates.</p></article>
+          </div>
+        </section>
+
+        <!-- DISPATCH VIEW -->
+        <section class="view" id="dispatch">
+          <div class="page-intro">
+            <div><span class="eyebrow">Dispatch center / New case</span><h1>Smart Dispatch</h1><p>Submit an emergency request to execute the backend dispatch algorithm.</p></div>
+            <span class="demo-note">Connected to /api/book-ambulance</span>
+          </div>
+          <div class="dispatch-layout">
+            <form class="panel request-form" id="dispatchForm">
+              <div class="panel-heading"><div><span class="step-label">01 / Intake</span><h2>New Emergency Request</h2></div><span class="case-id" id="caseIdDisplay">CASE-INTAKE</span></div>
+              <label>Patient / Caller Name<input id="callerName" type="text" placeholder="e.g. Priya Sharma" required></label>
+              <label>Emergency Description<textarea id="description" rows="4" placeholder="Describe symptoms, injuries or scene details..." required></textarea></label>
+              <label>Date & Time<input id="requestedAt" type="datetime-local" required></label>
+              <div class="form-grid">
+                <label>Emergency Location
+                  <select id="locationSelect">
+                    <option value="Bharat Nagar Chowk" selected>Bharat Nagar Chowk (Ludhiana)</option>
+                    <option value="GT Road">GT Road Flyover</option>
+                    <option value="Model Town">Model Town Main Market</option>
+                    <option value="Civil Lines">Civil Lines District HQ</option>
+                    <option value="Ferozepur Road">Ferozepur Road Bypass</option>
+                    <option value="Ring Road">Ring Road Crossing</option>
+                    <option value="Mall Road">Mall Road South</option>
+                  </select>
+                </label>
+                <label>Emergency Type<select id="emergencyType"><option>Accident</option><option selected>Cardiac</option><option>Stroke</option><option>Breathing Problem</option><option>Injury</option><option>Other</option></select></label>
+                <label>Number of Patients<select id="patients"><option>1 patient</option><option>2 patients</option><option>3 patients</option><option>4+ patients</option></select></label>
+                <label>Severity<select id="severity"><option>Critical</option><option>High</option><option>Medium</option><option>Low</option></select></label>
+              </div>
+              <button class="primary-btn full" type="submit" id="dispatchSubmitBtn">Execute Smart Dispatch <span aria-hidden="true">→</span></button>
+            </form>
+            <div class="dispatch-results" id="dispatchResults">
+              <div class="empty-state"><span>✚</span><h2>Ready for Dispatch</h2><p>Submit an emergency request to execute the Python dispatch algorithm and calculate Haversine route ETAs.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- DASHBOARD VIEW -->
+        <section class="view" id="dashboard">
+          <div class="page-intro">
+            <div><span class="eyebrow">Operations / Live overview <span class="live-pill">Monitoring</span></span><h1>Live Dashboard</h1><p>Monitor active emergencies, fleet coverage, and hospital readiness in real-time.</p></div>
+            <button class="outline-btn" id="refreshDashboard">↻ Refresh data</button>
+          </div>
+          <div class="overview-grid">
+            <div class="overview-card red-border"><small>Active emergencies</small><strong id="dashActiveCount">--</strong><span id="dashActiveSub">SQLite Live Stream</span></div>
+            <div class="overview-card"><small>Critical cases</small><strong id="dashCritCount">--</strong><span class="red-text">Immediate priority</span></div>
+            <div class="overview-card green-border"><small>Ambulances available</small><strong id="dashAvailAmb">--</strong><span class="green-text" id="dashAvailPct">Fleet Coverage</span></div>
+            <div class="overview-card"><small>Ambulances on route</small><strong id="dashRouteAmb">--</strong><span>Active Dispatch</span></div>
+            <div class="overview-card"><small>Hospitals available</small><strong id="dashHospCount">--</strong><span>Receiving Open</span></div>
+            <div class="overview-card"><small>Average ETA</small><strong id="dashAvgEta">-- <b>min</b></strong><span class="green-text">Optimized Haversine</span></div>
+          </div>
+          <div class="dashboard-grid">
+            <div class="panel map-panel">
+              <div class="panel-heading">
+                <div><span class="step-label">Live coverage</span><h2>Response Map</h2></div>
+                <span class="map-legend"><i class="legend-ambulance"></i> Ambulance <i class="legend-emergency"></i> Emergency <i class="legend-hospital"></i> Hospital</span>
+              </div>
+              <div class="map-canvas" id="mapCanvas">
+                <div class="road road-a"></div><div class="road road-b"></div><div class="road road-c"></div>
+                <div class="traffic-badge traffic-heavy" id="mapTrafficBadge">Traffic Penalty Active · Bottlenecks Monitored</div>
+                <div id="liveMapMarkers" aria-live="polite"></div>
+              </div>
+            </div>
+            <div class="panel queue-panel">
+              <div class="panel-heading">
+                <div><span class="step-label">Emergency Queue</span><h2>Active Response List</h2></div>
+              </div>
+              <div class="queue-list" id="queueList">
+                <div class="empty-state" style="padding:20px;min-height:auto;"><span>◷</span><p>Querying active emergency queue from SQLite...</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel traffic-panel" style="margin-top:22px;">
+            <div class="panel-heading">
+              <div><span class="step-label">Routing intelligence</span><h2>Traffic-prone areas</h2></div>
+              <span class="demo-note" id="trafficSyncStatus">SQLite traffic data</span>
+            </div>
+            <div class="traffic-management">
+              <div class="traffic-area-list" id="trafficAreaList"><p class="muted-label">Loading traffic areas...</p></div>
+              <form class="traffic-area-form" id="trafficAreaForm">
+                <strong>Add bottleneck</strong>
+                <input id="trafficAreaName" type="text" placeholder="Area name" required>
+                <div class="form-grid">
+                  <input id="trafficAreaLat" type="number" step="any" placeholder="Latitude" required>
+                  <input id="trafficAreaLon" type="number" step="any" placeholder="Longitude" required>
+                </div>
+                <div class="form-grid">
+                  <select id="trafficAreaSeverity"><option>Moderate</option><option>Heavy</option><option>Low</option></select>
+                  <input id="trafficAreaDelay" type="number" min="0" max="120" value="5" placeholder="Delay minutes" required>
+                </div>
+                <input id="trafficAreaRoute" type="text" placeholder="Alternative route" required>
+                <button class="outline-btn" type="submit">Add traffic area</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="panel table-panel" style="margin-top:22px;">
+            <div class="panel-heading" style="padding:14px 18px 10px;">
+              <div><span class="step-label">Control Room</span><h2>All Dispatch Bookings & Lifecycle Management</h2></div>
+            </div>
+            <table>
+              <thead>
+                <tr><th>Booking ID</th><th>Route</th><th>Priority</th><th>Ambulance</th><th>Status</th><th>Lifecycle Action</th></tr>
+              </thead>
+              <tbody id="bookingsTableBody">
+                <!-- Dynamically populated from SQLite -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- AMBULANCES VIEW -->
+        <section class="view" id="ambulances">
+          <div class="page-intro">
+            <div><span class="eyebrow">Fleet management</span><h1>Ambulance Fleet</h1><p>Check vehicle readiness, capabilities, location, and route performance.</p></div>
+            <button class="primary-btn" data-open-modal>+ New Emergency</button>
+          </div>
+          <div class="filter-bar">
+            <span>Filter fleet</span>
+            <button class="filter-btn active" data-filter="all">All <b id="fleetCntAll">6</b></button>
+            <button class="filter-btn" data-filter="available">Available <b id="fleetCntAvail">4</b></button>
+            <button class="filter-btn" data-filter="route">On Route <b id="fleetCntRoute">2</b></button>
+            <button class="filter-btn" data-filter="critical">ALS Support <b id="fleetCntAls">4</b></button>
+          </div>
+          <div class="panel table-panel">
+            <table>
+              <thead>
+                <tr><th>Ambulance ID</th><th>Type</th><th>Location</th><th>Assigned Patient</th><th>Status</th><th>Action / Sim</th><th>Equipment</th></tr>
+              </thead>
+              <tbody id="fleetTable">
+                <!-- Dynamically populated from SQLite -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- HOSPITALS VIEW -->
+        <section class="view" id="hospitals">
+          <div class="page-intro">
+            <div><span class="eyebrow">Receiving facilities</span><h1>Hospital Availability</h1><p>Match emergency needs with open departments, available beds, and specialized care.</p></div>
+            <span class="demo-note" id="hospSyncTag">SQLite Sync Active</span>
+          </div>
+          <div class="hospital-grid" id="hospitalGrid">
+            <!-- Dynamically populated from SQLite -->
+          </div>
+        </section>
+
+        <!-- ANALYTICS VIEW -->
+        <section class="view" id="analytics">
+          <div class="page-intro">
+            <div><span class="eyebrow">Planning intelligence</span><h1>Dispatch Analytics</h1><p>Historical emergency distribution and response metrics.</p></div>
+            <select class="period-select" id="analyticsPeriod"><option value="7">Last 7 days</option><option value="30">Last 30 days</option></select>
+          </div>
+          <div class="analytics-grid">
+            <div class="panel chart-panel">
+              <div class="panel-heading"><div><span class="step-label">Volume</span><h2>Emergency cases by type</h2></div><span class="muted-label" id="analyticsTotalCases">Live data</span></div>
+              <div class="bar-chart" id="analyticsTypeChart"><p class="muted-label">Loading dispatch history...</p></div>
+            </div>
+            <div class="panel chart-panel">
+              <div class="panel-heading"><div><span class="step-label">Performance</span><h2>Average ambulance ETA</h2></div><strong class="green-text" id="analyticsEtaValue">Waiting</strong></div>
+              <div class="line-chart" id="analyticsStatusChart">
+                <div class="chart-labels"><span>Live response status</span></div>
+              </div>
+            </div>
+            <div class="panel utilization-panel">
+              <div class="panel-heading"><div><span class="step-label">Fleet</span><h2>Ambulance utilization</h2></div></div>
+              <div class="utilization">
+                <div class="donut"><strong id="analyticsUtilization">0%</strong><small id="analyticsUtilizationLabel">in use</small></div>
+                <div class="util-legend">
+                  <span><i class="legend-ambulance"></i> Active routes</span>
+                  <span><i class="legend-hospital"></i> At hospitals</span>
+                  <span><i class="legend-emergency"></i> Waiting dispatch</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- EMERGENCY REQUEST MODAL -->
+  <div class="modal-backdrop" id="emergencyModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="Close">×</button>
+      <span class="eyebrow red-text">Priority intake</span>
+      <h2 id="modalTitle">Emergency Request</h2>
+      <p>Capture essential details. The Flask dispatch engine will calculate optimal response immediately.</p>
+      <form id="quickEmergencyForm">
+        <label>Emergency Location
+          <select id="quickLocation" required>
+            <option value="Bharat Nagar Chowk" selected>Bharat Nagar Chowk</option>
+            <option value="GT Road">GT Road Flyover</option>
+            <option value="Model Town">Model Town Market</option>
+            <option value="Civil Lines">Civil Lines Area</option>
+            <option value="Ferozepur Road">Ferozepur Road Bypass</option>
+          </select>
+        </label>
+        <div class="form-grid">
+          <label>Emergency type<select id="quickType"><option>Accident</option><option selected>Cardiac</option><option>Stroke</option><option>Breathing Problem</option><option>Injury</option></select></label>
+          <label>Severity<select id="quickSeverity"><option>Critical</option><option>High</option><option>Medium</option><option>Low</option></select></label>
+        </div>
+        <label>Description<textarea id="quickDescription" rows="3" placeholder="What happened?"></textarea></label>
+        <label>Date & Time<input id="quickRequestedAt" type="datetime-local" required></label>
+        <label>Number of patients<select id="quickPatients"><option>1 patient</option><option>2 patients</option><option>3 patients</option><option>4+ patients</option></select></label>
+        <button class="emergency-submit" type="submit" id="quickSubmitBtn">Submit Emergency Request <span aria-hidden="true">→</span></button>
+      </form>
+      <div class="confirmation" id="confirmation">
+        <span>✓</span><div><strong>Request Received & Dispatched</strong><p>Redirecting to Smart Dispatch results...</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AUTH / ACCOUNT MODAL -->
+  <div class="modal-backdrop" id="authModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="authModalClose">×</button>
+      <span class="eyebrow">Session Management</span>
+      <h2 id="authTitle">User Sign In</h2>
+      <p id="authSubtitle">Log in to manage dispatch operations, hospital capacity, or patient bookings.</p>
+      
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tabLoginBtn">Sign In</button>
+        <button class="auth-tab" id="tabRegisterBtn">Register</button>
+      </div>
+
+      <form id="authForm">
+        <div id="registerFields" style="display:none;">
+          <label>Full Name<input id="authName" type="text" placeholder="e.g. Dr. Priya Sharma"></label>
+          <label>Phone Number<input id="authPhone" type="tel" placeholder="e.g. 9876543210"></label>
+          <label>Role / Access Level
+            <select id="authRole">
+              <option value="operator">Dispatch Operator / Admin</option>
+              <option value="hospital">Hospital Staff</option>
+              <option value="patient" selected>Patient / Citizen</option>
+            </select>
+          </label>
+        </div>
+        <label>Email Address<input id="authEmail" type="email" placeholder="e.g. operator@smartdispatch.org" required></label>
+        <label>Password<input id="authPassword" type="password" placeholder="••••••••" required></label>
+        <button class="primary-btn full" type="submit" id="authSubmitBtn">Sign In <span>→</span></button>
+      </form>
+      
+      <div id="loggedInView" style="display:none; text-align:center; padding:15px 0;">
+        <h3 id="loggedMsg">You are logged in as Operator</h3>
+        <button class="outline-btn" id="logoutBtn" style="margin-top:15px; color:var(--red);">Log Out</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTIFICATIONS MODAL / DRAWER -->
+  <div class="modal-backdrop" id="notificationsModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="notifModalClose">×</button>
+      <span class="eyebrow">Hospital Reception Desk</span>
+      <h2>Incoming Dispatch Alerts</h2>
+      <p>Notifications sent to receiving hospitals upon ambulance assignment.</p>
+      <div class="notif-list" id="notifListContainer">
+        <!-- Dynamically populated from SQLite -->
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/script.js"></script>
+</body>
+</html>
